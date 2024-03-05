@@ -1,0 +1,20 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.hawsFest {
+	// background-color: red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.hawsFest div{
+	width: 25%;
+}
+.timeOneUpload{
+	height: 100px;
+	width: 100px;
+	background-color: black;
+}
