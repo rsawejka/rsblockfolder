@@ -32,7 +32,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType( 'rs-blockfolder/haws-fest', {
+registerBlockType( 'rs-blockfolder/haws-events', {
 	/**
 	 * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
 	 */
@@ -42,13 +42,13 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 	 * This is the display title for your block, which can be translated with `i18n` functions.
 	 * The block inserter will show this name.
 	 */
-	title: __( 'haws-fest', 'rs-blockfolder' ),
+	title: __( 'haws-events', 'rs-blockfolder' ),
 
 	/**
 	 * This is a short description for your block, can be translated with `i18n` functions.
 	 * It will be shown in the Block Tab in the Settings Sidebar.
 	 */
-	description: __( 'haws-fest', 'rs-blockfolder' ),
+	description: __( 'haws-events', 'rs-blockfolder' ),
 
 	/**
 	 * Blocks are grouped into categories to help users browse and discover them.
