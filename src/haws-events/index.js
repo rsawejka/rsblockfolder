@@ -72,7 +72,7 @@ registerBlockType( 'rs-blockfolder/haws-events', {
 
 	keywords: [
 		'block',
-		'haws-fest',
+		'haws-events',
 		__('test'),
 		__('review'),
 		'rs'

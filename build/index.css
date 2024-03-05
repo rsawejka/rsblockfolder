@@ -67,6 +67,29 @@
   width: 100px;
   background-color: black;
 }
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/haws-events/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.hawsFest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hawsFest div {
+  width: 25%;
+}
+
+.timeOneUpload {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
 /*!******************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/location-time/editor.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************/

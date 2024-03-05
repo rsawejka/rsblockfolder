@@ -970,6 +970,383 @@ function save({
 
 /***/ }),
 
+/***/ "./src/haws-events/edit.js":
+/*!*********************************!*\
+  !*** ./src/haws-events/edit.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ edit)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/haws-events/editor.scss");
+
+/**
+ * Retrieves the translation of text.
+ *
+ * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
+ */
+
+
+/**
+ * React hook that is used to mark the block wrapper element.
+ * It provides all the necessary props like the class name.
+ *
+ * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
+ */
+//import { useBlockProps } from '@wordpress/block-editor';
+//import { RichText } from '@wordpress/block-editor';
+
+
+
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * Those files can contain any CSS code that gets applied to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+
+
+/**
+ * The edit function describes the structure of your block in the context of the
+ * editor. This represents what the editor will render when the block is used.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#edit
+ *
+ * @return {WPElement} Element to render.
+ */
+//see all the code in differnt branches
+//has some branches master, panel-one, panel-two
+function edit({
+  attributes,
+  setAttributes
+}) {
+  //export default function edit(props) {
+  //let attributes = props.attributes;
+  //let {attributes, setAttributes} = props;
+
+  //drop down and color palate dont work at same time
+  let divStyles = {
+    backgroundColor: attributes.backgroundColor,
+    color: attributes.textColor
+  };
+  var eventSelectMenu = getElementById('eventSelectMenu');
+  const eventMenuOption = document.createElement("option");
+  for (let i = 0; i < 500; i++) {
+    eventSelectMenu.appendChild(eventMenuOption);
+  }
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
+      style: divStyles
+    })
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "hawsEvents"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("select", {
+    id: "eventSelectMenu"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOne"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneTitle",
+    value: attributes.tileOneTitle,
+    onChange: tileOneTitle => setAttributes({
+      tileOneTitle
+    }),
+    placeholder: "Title"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneUrl",
+    value: attributes.tileOneUrl,
+    onChange: tileOneUrl => setAttributes({
+      tileOneUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  })))));
+}
+
+/***/ }),
+
+/***/ "./src/haws-events/index.js":
+/*!**********************************!*\
+  !*** ./src/haws-events/index.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./src/haws-events/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./src/haws-events/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./src/haws-events/save.js");
+/**
+ * Registers a new block provided a unique name and an object defining its behavior.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+ */
+
+
+/**
+ * Retrieves the translation of text.
+ *
+ * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
+ */
+
+
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * All files containing `style` keyword are bundled together. The code used
+ * gets applied both to the front of your site and to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+/**
+ * Every block starts by registering a new block type definition.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+ */
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('rs-blockfolder/haws-events', {
+  /**
+   * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
+   */
+  apiVersion: 2,
+  /**
+   * This is the display title for your block, which can be translated with `i18n` functions.
+   * The block inserter will show this name.
+   */
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('haws-events', 'rs-blockfolder'),
+  /**
+   * This is a short description for your block, can be translated with `i18n` functions.
+   * It will be shown in the Block Tab in the Settings Sidebar.
+   */
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('haws-events', 'rs-blockfolder'),
+  /**
+   * Blocks are grouped into categories to help users browse and discover them.
+   * The categories provided by core are `text`, `media`, `design`, `widgets`, and `embed`.
+   */
+  category: 'widgets',
+  /**
+   * An icon property should be specified to make it easier to identify a block.
+   * These can be any of WordPress’ Dashicons, or a custom svg element.
+   */
+  icon: 'admin-users',
+  /**
+   * Optional block extended support features.
+   */
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  keywords: ['block', 'haws-events', (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('test'), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('review'), 'rs'],
+  //these are the date "fields" we want to store with our blocks
+  attributes: {
+    tileOneImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileOneTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileOneTitle'
+    },
+    tileOneUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileTwoImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileTwoTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileTwoTitle'
+    },
+    tileTwoUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileThreeImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileThreeTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileThreeTitle'
+    },
+    tileThreeUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileFourImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileFourTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileFourTitle'
+    },
+    tileFourUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileFiveImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileFiveTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileFiveTitle'
+    },
+    tileFiveUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileSixImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileSixTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileSixTitle'
+    },
+    tileSixUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileSevenImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileSevenTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileSevenTitle'
+    },
+    tileSevenUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileEightImgUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileEightTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.tileEightTitle'
+    },
+    tileEightUrl: {
+      type: 'string',
+      default: '#'
+    }
+  },
+  /**
+   * @see ./edit.js
+   */
+  edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
+  //or
+  //edit: function (){
+  //
+  //}
+
+  /**
+   * @see ./save.js
+   */
+  save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
+  //same as
+  // save: save
+});
+
+/***/ }),
+
+/***/ "./src/haws-events/save.js":
+/*!*********************************!*\
+  !*** ./src/haws-events/save.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ save)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
+
+/**
+ * Retrieves the translation of text.
+ *
+ * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
+ */
+
+
+/**
+ * React hook that is used to mark the block wrapper element.
+ * It provides all the necessary props like the class name.
+ *
+ * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
+ */
+
+
+/**
+ * The save function defines the way in which the different attributes should
+ * be combined into the final markup, which is then serialized by the block
+ * editor into `post_content`.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#save
+ *
+ * @return {WPElement} Element to render.
+ */
+
+function save({
+  attributes
+}) {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "hawsFest",
+    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
+      style: divStyles
+    })
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tile"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "title tileOneTitle"
+  }, attributes.tileOneTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileInner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileImg",
+    style: tileOneBackgroundImage
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTitle",
+    style: titleBorder
+  })))));
+}
+
+/***/ }),
+
 /***/ "./src/haws-fest/edit.js":
 /*!*******************************!*\
   !*** ./src/haws-fest/edit.js ***!
@@ -1741,13 +2118,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _service_page_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./service-page/index */ "./src/service-page/index.js");
 /* harmony import */ var _pet_future_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pet-future/index */ "./src/pet-future/index.js");
 /* harmony import */ var _haws_fest_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./haws-fest/index */ "./src/haws-fest/index.js");
-/* harmony import */ var _location_time_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./location-time/index */ "./src/location-time/index.js");
-/* harmony import */ var _test_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./test/index */ "./src/test/index.js");
-/* harmony import */ var _employeebio_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./employeebio/index */ "./src/employeebio/index.js");
-/* harmony import */ var _border_control_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./border-control/index */ "./src/border-control/index.js");
-/* harmony import */ var _board_member_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./board-member/index */ "./src/board-member/index.js");
+/* harmony import */ var _haws_events_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./haws-events/index */ "./src/haws-events/index.js");
+/* harmony import */ var _location_time_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./location-time/index */ "./src/location-time/index.js");
+/* harmony import */ var _test_index__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./test/index */ "./src/test/index.js");
+/* harmony import */ var _employeebio_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./employeebio/index */ "./src/employeebio/index.js");
+/* harmony import */ var _border_control_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./border-control/index */ "./src/border-control/index.js");
+/* harmony import */ var _board_member_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./board-member/index */ "./src/board-member/index.js");
 //include all block index.js files
 //repeat for each block
+
 
 
 
@@ -4009,6 +4388,30 @@ __webpack_require__.r(__webpack_exports__);
 /***/ "./src/employeebio/style.scss":
 /*!************************************!*\
   !*** ./src/employeebio/style.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/haws-events/editor.scss":
+/*!*************************************!*\
+  !*** ./src/haws-events/editor.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/haws-events/style.scss":
+/*!************************************!*\
+  !*** ./src/haws-events/style.scss ***!
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

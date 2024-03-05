@@ -3,6 +3,7 @@
 import './service-page/index';
 import './pet-future/index';
 import './haws-fest/index';
+import './haws-events/index';
 import './location-time/index';
 import './test/index';
 import './employeebio/index'
