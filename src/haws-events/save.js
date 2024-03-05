@@ -29,24 +29,6 @@ export default function save({ attributes }) {
 
 
 	return (
-		<div className='hawsFest' {...useBlockProps.save({ style: divStyles })}>
-
-				<div className="tile">
-					<div className='title tileOneTitle'>{attributes.tileOneTitle}</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileOneBackgroundImage}>
-							<div className="tileTitle" style={titleBorder}>
-								</div>
-							</div>
-							
-							
-						
-					</div>
-				</div>
-
-			
-
-
-		</div>
+		<div className='hawsFest' {...useBlockProps.save()}></div>
 	);
 }

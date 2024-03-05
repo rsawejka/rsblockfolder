@@ -980,16 +980,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ edit)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/haws-events/editor.scss");
-
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/haws-events/editor.scss");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
 /**
  * Retrieves the translation of text.
  *
@@ -1016,6 +1015,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 
+
 /**
  * The edit function describes the structure of your block in the context of the
  * editor. This represents what the editor will render when the block is used.
@@ -1026,49 +1026,26 @@ __webpack_require__.r(__webpack_exports__);
  */
 //see all the code in differnt branches
 //has some branches master, panel-one, panel-two
-function edit({
-  attributes,
-  setAttributes
-}) {
+function edit() {
   //export default function edit(props) {
   //let attributes = props.attributes;
   //let {attributes, setAttributes} = props;
 
-  //drop down and color palate dont work at same time
-  let divStyles = {
-    backgroundColor: attributes.backgroundColor,
-    color: attributes.textColor
-  };
-  var eventSelectMenu = getElementById('eventSelectMenu');
-  const eventMenuOption = document.createElement("option");
-  for (let i = 0; i < 500; i++) {
-    eventSelectMenu.appendChild(eventMenuOption);
-  }
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
-      style: divStyles
-    })
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  document.addEventListener("DOMContentLoaded", function () {
+    var eventSelectMenu = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)('select');
+    eventSelectMenu.setAttribute('id', 'eventSelectMenu');
+    var mainConatainer = getElementById("hawsEvents");
+    mainConatainer.innerHTML = eventSelectMenu;
+    mainConatainer.innerHTML = "test";
+  });
+
+  //var eventMenuOption = document.createElement('div');
+
+  //eventSelectMenu.getElemementbyId('eventSelectMenu').appendChild(eventMenuOption);
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
     className: "hawsEvents"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("select", {
-    id: "eventSelectMenu"
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileOne"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileOneTitle",
-    value: attributes.tileOneTitle,
-    onChange: tileOneTitle => setAttributes({
-      tileOneTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileOneUrl",
-    value: attributes.tileOneUrl,
-    onChange: tileOneUrl => setAttributes({
-      tileOneUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  })))));
+  }));
 }
 
 /***/ }),
@@ -1155,112 +1132,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   keywords: ['block', 'haws-events', (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('test'), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('review'), 'rs'],
   //these are the date "fields" we want to store with our blocks
-  attributes: {
-    tileOneImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileOneTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileOneTitle'
-    },
-    tileOneUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileTwoImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileTwoTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileTwoTitle'
-    },
-    tileTwoUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileThreeImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileThreeTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileThreeTitle'
-    },
-    tileThreeUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileFourImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileFourTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileFourTitle'
-    },
-    tileFourUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileFiveImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileFiveTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileFiveTitle'
-    },
-    tileFiveUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileSixImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileSixTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileSixTitle'
-    },
-    tileSixUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileSevenImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileSevenTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileSevenTitle'
-    },
-    tileSevenUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileEightImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileEightTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileEightTitle'
-    },
-    tileEightUrl: {
-      type: 'string',
-      default: '#'
-    }
-  },
+
   /**
    * @see ./edit.js
    */
@@ -1327,22 +1199,8 @@ function save({
 }) {
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "hawsFest",
-    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
-      style: divStyles
-    })
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tile"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "title tileOneTitle"
-  }, attributes.tileOneTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileInner"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileImg",
-    style: tileOneBackgroundImage
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileTitle",
-    style: titleBorder
-  })))));
+    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save()
+  });
 }
 
 /***/ }),

@@ -27,6 +27,7 @@ import { SelectControl, PanelBody, PanelRow, ColorPalette, ColorPicker } from '@
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
+import { createElement } from '@wordpress/element';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -38,48 +39,28 @@ import './editor.scss';
  */
 //see all the code in differnt branches
 //has some branches master, panel-one, panel-two
-export default function edit({ attributes, setAttributes }) {
+export default function edit() {
 	//export default function edit(props) {
 	//let attributes = props.attributes;
 	//let {attributes, setAttributes} = props;
 
-	//drop down and color palate dont work at same time
-	let divStyles = {
-		 backgroundColor: attributes.backgroundColor,
-		 color: attributes.textColor,
-	}
-	var eventSelectMenu = getElementById('eventSelectMenu');
-	const eventMenuOption = document.createElement("option")
+	document.addEventListener("DOMContentLoaded", function() {
+		var eventSelectMenu = createElement('select');
+		eventSelectMenu.setAttribute('id', 'eventSelectMenu');
+		var mainConatainer = getElementById("hawsEvents");
+		mainConatainer.innerHTML = eventSelectMenu;
+		mainConatainer.innerHTML = "test";
+	  });
+	
+	//var eventMenuOption = document.createElement('div');
 	
 
-	for (let i = 0; i < 500; i++) {
-		eventSelectMenu.appendChild(eventMenuOption);
-	  }
+		//eventSelectMenu.getElemementbyId('eventSelectMenu').appendChild(eventMenuOption);
 	
 	return (
-		<div {...useBlockProps({ style: divStyles })}>
+		<div>
 			<div className="hawsEvents">
-			<select id="eventSelectMenu"></select>
-				<div className='tileOne'>
-					<div>
-						<PlainText
-							className="tileOneTitle"
-							value={attributes.tileOneTitle}
-							onChange={(tileOneTitle) => setAttributes({ tileOneTitle })}
-							placeholder="Title"
-						/>
-					</div>
-					<div>
-						<PlainText
-							className="tileOneUrl"
-							value={attributes.tileOneUrl}
-							onChange={(tileOneUrl) => setAttributes({ tileOneUrl })}
-							placeholder="URL MUST INCLUDE HTTPS://"
-						/>
 
-
-					</div>
-				</div>
 
 			</div>
 		</div>
