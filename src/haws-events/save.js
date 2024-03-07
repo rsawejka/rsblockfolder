@@ -42,6 +42,12 @@ export default function save({ attributes }) {
 				<div className='eventOneStart'>
 					{attributes.eventOneStart}
 				</div>
+				<div className='eventOneEnd'>
+					{attributes.eventOneEnd}
+				</div>
+				<div className='eventOneWeekDay'>
+					{attributes.eventOneWeekDay}
+				</div>
 		</div>
 	);
 }

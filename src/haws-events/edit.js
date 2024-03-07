@@ -75,6 +75,18 @@ export default function edit({ attributes, setAttributes }) {
 							onChange={(eventOneStart) => setAttributes({ eventOneStart })}
 							placeholder="Start Date"
 						/>
+				<PlainText
+							className="eventOneEnd"
+							value={attributes.eventOneEnd}
+							onChange={(eventOneEnd) => setAttributes({ eventOneEnd })}
+							placeholder="End Date"
+						/>
+				<PlainText
+							className="eventOneWeekDay"
+							value={attributes.eventOneWeekDay}
+							onChange={(eventOneWeekDay) => setAttributes({ eventOneWeekDay })}
+							placeholder="Day(s) of the week"
+						/>
 			</div>
 		</div>
 	);

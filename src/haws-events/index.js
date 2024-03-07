@@ -85,10 +85,20 @@ registerBlockType( 'rs-blockfolder/haws-events', {
 			source: 'text',
 			selector: '.eventOneTitle',
 		},
-		eventOneTitle: {
+		eventOneStart: {
 			type: 'string',
 			source: 'text',
 			selector: '.eventOneStart',
+		},
+		eventOneEnd: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventOneEnd',
+		},
+		eventOneWeekDay: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventOneWeekDay',
 		},
 	},
 

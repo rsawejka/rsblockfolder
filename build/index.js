@@ -1069,6 +1069,20 @@ function edit({
       eventOneStart
     }),
     placeholder: "Start Date"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    className: "eventOneEnd",
+    value: attributes.eventOneEnd,
+    onChange: eventOneEnd => setAttributes({
+      eventOneEnd
+    }),
+    placeholder: "End Date"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    className: "eventOneWeekDay",
+    value: attributes.eventOneWeekDay,
+    onChange: eventOneWeekDay => setAttributes({
+      eventOneWeekDay
+    }),
+    placeholder: "Day(s) of the week"
   })));
 }
 
@@ -1162,10 +1176,20 @@ __webpack_require__.r(__webpack_exports__);
       source: 'text',
       selector: '.eventOneTitle'
     },
-    eventOneTitle: {
+    eventOneStart: {
       type: 'string',
       source: 'text',
       selector: '.eventOneStart'
+    },
+    eventOneEnd: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneEnd'
+    },
+    eventOneWeekDay: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneWeekDay'
     }
   },
   /**
@@ -1248,7 +1272,11 @@ function save({
     className: "eventOneTitle"
   }, attributes.eventOneTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneStart"
-  }, attributes.eventOneStart));
+  }, attributes.eventOneStart), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventOneEnd"
+  }, attributes.eventOneEnd), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventOneWeekDay"
+  }, attributes.eventOneWeekDay));
 }
 
 /***/ }),
