@@ -80,10 +80,15 @@ registerBlockType( 'rs-blockfolder/haws-events', {
 
 	//these are the date "fields" we want to store with our blocks
 	attributes: {
-		tileOneTitle: {
+		eventOneTitle: {
 			type: 'string',
 			source: 'text',
 			selector: '.eventOneTitle',
+		},
+		eventOneTitle: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventOneStart',
 		},
 	},
 

@@ -36,8 +36,11 @@ export default function save({ attributes }) {
 
 	return (
 		<div className='hawsEvents' {...useBlockProps.save({style: divStyles})}>
-				<div className='title tileOneTitle'>
+				<div className='eventOneTitle'>
 					{attributes.eventOneTitle}
+				</div>
+				<div className='eventOneStart'>
+					{attributes.eventOneStart}
 				</div>
 		</div>
 	);

@@ -1056,12 +1056,19 @@ function edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
     className: "firstEvent"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
-    className: "firstEventTitle",
-    value: attributes.firstEventTitle,
-    onChange: firstEventTitle => setAttributes({
-      firstEventTitle
+    className: "eventOneTitle",
+    value: attributes.eventOneTitle,
+    onChange: eventOneTitle => setAttributes({
+      eventOneTitle
     }),
     placeholder: "Title"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    className: "eventOneStart",
+    value: attributes.eventOneStart,
+    onChange: eventOneStart => setAttributes({
+      eventOneStart
+    }),
+    placeholder: "Start Date"
   })));
 }
 
@@ -1150,10 +1157,15 @@ __webpack_require__.r(__webpack_exports__);
   keywords: ['block', 'haws-events', (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('test'), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('review'), 'rs'],
   //these are the date "fields" we want to store with our blocks
   attributes: {
-    tileOneTitle: {
+    eventOneTitle: {
       type: 'string',
       source: 'text',
       selector: '.eventOneTitle'
+    },
+    eventOneTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneStart'
     }
   },
   /**
@@ -1233,8 +1245,10 @@ function save({
       style: divStyles
     })
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "title tileOneTitle"
-  }, attributes.eventOneTitle));
+    className: "eventOneTitle"
+  }, attributes.eventOneTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventOneStart"
+  }, attributes.eventOneStart));
 }
 
 /***/ }),

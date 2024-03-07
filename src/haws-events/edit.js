@@ -64,10 +64,16 @@ export default function edit({ attributes, setAttributes }) {
 		<div {...useBlockProps({ style: divStyles })}>
 			<div className='firstEvent'>
 				<PlainText
-							className="firstEventTitle"
-							value={attributes.firstEventTitle}
-							onChange={(firstEventTitle) => setAttributes({ firstEventTitle })}
+							className="eventOneTitle"
+							value={attributes.eventOneTitle}
+							onChange={(eventOneTitle) => setAttributes({ eventOneTitle })}
 							placeholder="Title"
+						/>
+				<PlainText
+							className="eventOneStart"
+							value={attributes.eventOneStart}
+							onChange={(eventOneStart) => setAttributes({ eventOneStart })}
+							placeholder="Start Date"
 						/>
 			</div>
 		</div>
