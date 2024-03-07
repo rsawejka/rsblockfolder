@@ -1026,26 +1026,43 @@ __webpack_require__.r(__webpack_exports__);
  */
 //see all the code in differnt branches
 //has some branches master, panel-one, panel-two
-function edit() {
+function edit({
+  attributes,
+  setAttributes
+}) {
   //export default function edit(props) {
   //let attributes = props.attributes;
   //let {attributes, setAttributes} = props;
-
-  document.addEventListener("DOMContentLoaded", function () {
-    var eventSelectMenu = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)('select');
-    eventSelectMenu.setAttribute('id', 'eventSelectMenu');
-    var mainConatainer = getElementById("hawsEvents");
-    mainConatainer.innerHTML = eventSelectMenu;
-    mainConatainer.innerHTML = "test";
-  });
+  let divStyles = {
+    backgroundColor: attributes.backgroundColor,
+    color: attributes.textColor
+  };
+  // document.addEventListener("DOMContentLoaded", function() {
+  // 	var eventSelectMenu = createElement('select');
+  // 	eventSelectMenu.setAttribute('id', 'eventSelectMenu');
+  // 	var mainConatainer = getElementById("hawsEvents");
+  // 	mainConatainer.innerHTML = eventSelectMenu;
+  // 	mainConatainer.innerHTML = "test";
+  //   });
 
   //var eventMenuOption = document.createElement('div');
 
   //eventSelectMenu.getElemementbyId('eventSelectMenu').appendChild(eventMenuOption);
 
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
-    className: "hawsEvents"
-  }));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
+      style: divStyles
+    })
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
+    className: "firstEvent"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    className: "firstEventTitle",
+    value: attributes.firstEventTitle,
+    onChange: firstEventTitle => setAttributes({
+      firstEventTitle
+    }),
+    placeholder: "Title"
+  })));
 }
 
 /***/ }),
@@ -1132,7 +1149,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   keywords: ['block', 'haws-events', (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('test'), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('review'), 'rs'],
   //these are the date "fields" we want to store with our blocks
-
+  attributes: {
+    tileOneTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneTitle'
+    }
+  },
   /**
    * @see ./edit.js
    */
@@ -1197,10 +1220,21 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
+  const divStyles = {
+    color: 'blue',
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+  };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "hawsFest",
-    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save()
-  });
+    className: "hawsEvents",
+    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
+      style: divStyles
+    })
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "title tileOneTitle"
+  }, attributes.eventOneTitle));
 }
 
 /***/ }),

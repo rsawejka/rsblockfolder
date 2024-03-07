@@ -26,9 +26,19 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 
 export default function save({ attributes }) {
-
+	const divStyles = {
+		color: 'blue',
+		display: 'flex',
+		flexDirection: 'row',
+		flexWrap: 'wrap',
+		justifyContent: 'center',
+	}
 
 	return (
-		<div className='hawsFest' {...useBlockProps.save()}></div>
+		<div className='hawsEvents' {...useBlockProps.save({style: divStyles})}>
+				<div className='title tileOneTitle'>
+					{attributes.eventOneTitle}
+				</div>
+		</div>
 	);
 }

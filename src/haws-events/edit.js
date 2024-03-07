@@ -39,18 +39,21 @@ import { createElement } from '@wordpress/element';
  */
 //see all the code in differnt branches
 //has some branches master, panel-one, panel-two
-export default function edit() {
+export default function edit({ attributes, setAttributes }) {
 	//export default function edit(props) {
 	//let attributes = props.attributes;
 	//let {attributes, setAttributes} = props;
-
-	document.addEventListener("DOMContentLoaded", function() {
-		var eventSelectMenu = createElement('select');
-		eventSelectMenu.setAttribute('id', 'eventSelectMenu');
-		var mainConatainer = getElementById("hawsEvents");
-		mainConatainer.innerHTML = eventSelectMenu;
-		mainConatainer.innerHTML = "test";
-	  });
+	let divStyles = {
+		backgroundColor: attributes.backgroundColor,
+		color: attributes.textColor,
+   }
+	// document.addEventListener("DOMContentLoaded", function() {
+	// 	var eventSelectMenu = createElement('select');
+	// 	eventSelectMenu.setAttribute('id', 'eventSelectMenu');
+	// 	var mainConatainer = getElementById("hawsEvents");
+	// 	mainConatainer.innerHTML = eventSelectMenu;
+	// 	mainConatainer.innerHTML = "test";
+	//   });
 	
 	//var eventMenuOption = document.createElement('div');
 	
@@ -58,10 +61,14 @@ export default function edit() {
 		//eventSelectMenu.getElemementbyId('eventSelectMenu').appendChild(eventMenuOption);
 	
 	return (
-		<div>
-			<div className="hawsEvents">
-
-
+		<div {...useBlockProps({ style: divStyles })}>
+			<div className='firstEvent'>
+				<PlainText
+							className="firstEventTitle"
+							value={attributes.firstEventTitle}
+							onChange={(firstEventTitle) => setAttributes({ firstEventTitle })}
+							placeholder="Title"
+						/>
 			</div>
 		</div>
 	);
