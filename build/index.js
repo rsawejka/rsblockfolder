@@ -1281,11 +1281,11 @@ function save({
   attributes
 }) {
   const divStyles = {
-    color: 'blue',
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
+    color: 'blue'
+  };
+  const eventCard = {
+    border: '2px solid black',
+    width: "33%"
   };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "hawsEvents",
@@ -1293,6 +1293,9 @@ function save({
       style: divStyles
     })
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: eventCard,
+    className: " eventOneCard"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "eventOneTitle"
   }, attributes.eventOneTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneStart"
@@ -1304,7 +1307,7 @@ function save({
     className: "eventOneCallToAction"
   }, attributes.eventOneCallToAction), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneCallToActionSecondary"
-  }, attributes.eventOneCallToActionSecondary));
+  }, attributes.eventOneCallToActionSecondary)));
 }
 
 /***/ }),

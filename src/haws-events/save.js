@@ -28,17 +28,18 @@ import { useBlockProps } from '@wordpress/block-editor';
 export default function save({ attributes }) {
 	const divStyles = {
 		color: 'blue',
-		display: 'flex',
-		flexDirection: 'row',
-		flexWrap: 'wrap',
-		justifyContent: 'center',
+	}
+	const eventCard = {
+		border: '2px solid black',
+		width: "33%",
 	}
 
 	return (
 		<div className='hawsEvents' {...useBlockProps.save({style: divStyles})}>
-				<div className='eventOneTitle'>
+			<div style={eventCard} className=' eventOneCard'>
+				<h3 className='eventOneTitle'>
 					{attributes.eventOneTitle}
-				</div>
+				</h3>
 				<div className='eventOneStart'>
 					{attributes.eventOneStart}
 				</div>
@@ -54,6 +55,7 @@ export default function save({ attributes }) {
 				<div className='eventOneCallToActionSecondary'>
 					{attributes.eventOneCallToActionSecondary}
 				</div>
+			</div>	
 		</div>
 	);
 }
