@@ -105,6 +105,11 @@ registerBlockType( 'rs-blockfolder/haws-events', {
 			source: 'text',
 			selector: '.eventOneCallToAction',
 		},
+		eventOneCallToActionSecondary: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventOneCallToActionSecondary',
+		},
 	},
 
 	/**

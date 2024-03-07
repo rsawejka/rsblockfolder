@@ -93,6 +93,12 @@ export default function edit({ attributes, setAttributes }) {
 							onChange={(eventOneCallToAction) => setAttributes({ eventOneCallToAction })}
 							placeholder="Call to action"
 						/>
+				<PlainText
+							className="eventOneCallToActionSecondary"
+							value={attributes.eventOneCallToActionSecondary}
+							onChange={(eventOneCallToActionSecondary) => setAttributes({ eventOneCallToActionSecondary })}
+							placeholder="Secondary Call to action"
+						/>
 			</div>
 		</div>
 	);

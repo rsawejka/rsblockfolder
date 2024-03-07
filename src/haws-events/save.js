@@ -51,6 +51,9 @@ export default function save({ attributes }) {
 				<div className='eventOneCallToAction'>
 					{attributes.eventOneCallToAction}
 				</div>
+				<div className='eventOneCallToActionSecondary'>
+					{attributes.eventOneCallToActionSecondary}
+				</div>
 		</div>
 	);
 }

@@ -1090,6 +1090,13 @@ function edit({
       eventOneCallToAction
     }),
     placeholder: "Call to action"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    className: "eventOneCallToActionSecondary",
+    value: attributes.eventOneCallToActionSecondary,
+    onChange: eventOneCallToActionSecondary => setAttributes({
+      eventOneCallToActionSecondary
+    }),
+    placeholder: "Secondary Call to action"
   })));
 }
 
@@ -1202,6 +1209,11 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       source: 'text',
       selector: '.eventOneCallToAction'
+    },
+    eventOneCallToActionSecondary: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneCallToActionSecondary'
     }
   },
   /**
@@ -1290,7 +1302,9 @@ function save({
     className: "eventOneWeekDay"
   }, attributes.eventOneWeekDay), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneCallToAction"
-  }, attributes.eventOneCallToAction));
+  }, attributes.eventOneCallToAction), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventOneCallToActionSecondary"
+  }, attributes.eventOneCallToActionSecondary));
 }
 
 /***/ }),
