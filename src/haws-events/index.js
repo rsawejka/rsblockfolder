@@ -100,6 +100,11 @@ registerBlockType( 'rs-blockfolder/haws-events', {
 			source: 'text',
 			selector: '.eventOneWeekDay',
 		},
+		eventOneCallToAction: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventOneCallToAction',
+		},
 	},
 
 	/**

@@ -48,6 +48,9 @@ export default function save({ attributes }) {
 				<div className='eventOneWeekDay'>
 					{attributes.eventOneWeekDay}
 				</div>
+				<div className='eventOneCallToAction'>
+					{attributes.eventOneCallToAction}
+				</div>
 		</div>
 	);
 }

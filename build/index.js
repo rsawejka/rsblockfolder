@@ -1083,6 +1083,13 @@ function edit({
       eventOneWeekDay
     }),
     placeholder: "Day(s) of the week"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+    className: "eventOneCallToAction",
+    value: attributes.eventOneCallToAction,
+    onChange: eventOneCallToAction => setAttributes({
+      eventOneCallToAction
+    }),
+    placeholder: "Call to action"
   })));
 }
 
@@ -1190,6 +1197,11 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       source: 'text',
       selector: '.eventOneWeekDay'
+    },
+    eventOneCallToAction: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneCallToAction'
     }
   },
   /**
@@ -1276,7 +1288,9 @@ function save({
     className: "eventOneEnd"
   }, attributes.eventOneEnd), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneWeekDay"
-  }, attributes.eventOneWeekDay));
+  }, attributes.eventOneWeekDay), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventOneCallToAction"
+  }, attributes.eventOneCallToAction));
 }
 
 /***/ }),
