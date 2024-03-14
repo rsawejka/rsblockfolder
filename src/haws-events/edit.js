@@ -17,7 +17,7 @@ import {
 	useBlockProps, RichText, MediaUpload, MediaUploadCheck, PlainText,
 	InspectorControls
 } from '@wordpress/block-editor';
-import { SelectControl, PanelBody, PanelRow, ColorPalette, ColorPicker } from '@wordpress/components';
+//import { SelectControl, PanelBody, PanelRow, ColorPalette, ColorPicker } from '@wordpress/components';
 
 
 /**
@@ -27,7 +27,7 @@ import { SelectControl, PanelBody, PanelRow, ColorPalette, ColorPicker } from '@
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
-import { createElement } from '@wordpress/element';
+//import { createElement } from '@wordpress/element';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -88,16 +88,90 @@ export default function edit({ attributes, setAttributes }) {
 							placeholder="Day(s) of the week"
 						/>
 				<PlainText
+							className="eventOneDescription"
+							value={attributes.eventOneDescription}
+							onChange={(eventOneDescription) => setAttributes({ eventOneDescription })}
+							placeholder="Description"
+						/>
+				<PlainText
 							className="eventOneCallToAction"
 							value={attributes.eventOneCallToAction}
 							onChange={(eventOneCallToAction) => setAttributes({ eventOneCallToAction })}
 							placeholder="Call to action"
 						/>
 				<PlainText
+							className="eventOneCallToActionLink"
+							value={attributes.eventOneCallToActionLink}
+							onChange={(eventOneCallToActionLink) => setAttributes({ eventOneCallToActionLink })}
+							placeholder="Call to action link"
+						/>
+				<PlainText
 							className="eventOneCallToActionSecondary"
 							value={attributes.eventOneCallToActionSecondary}
 							onChange={(eventOneCallToActionSecondary) => setAttributes({ eventOneCallToActionSecondary })}
 							placeholder="Secondary Call to action"
+						/>
+				<PlainText
+							className="eventOneCallToActionSecondaryLink"
+							value={attributes.eventOneCallToActionSecondaryLink}
+							onChange={(eventOneCallToActionSecondaryLink) => setAttributes({ eventOneCallToActionSecondaryLink })}
+							placeholder="Secondary Call to action link"
+						/>
+
+
+				<PlainText
+							className="eventTwoTitle"
+							value={attributes.eventTwoTitle}
+							onChange={(eventTwoTitle) => setAttributes({ eventTwoTitle })}
+							placeholder="Title"
+						/>
+				<PlainText
+							className="eventTwoStart"
+							value={attributes.eventTwoStart}
+							onChange={(eventTwoStart) => setAttributes({ eventTwoStart })}
+							placeholder="Start Date"
+						/>
+				<PlainText
+							className="eventTwoEnd"
+							value={attributes.eventTwoEnd}
+							onChange={(eventTwoEnd) => setAttributes({ eventTwoEnd })}
+							placeholder="End Date"
+						/>
+				<PlainText
+							className="eventTwoWeekDay"
+							value={attributes.eventTwoWeekDay}
+							onChange={(eventTwoWeekDay) => setAttributes({ eventTwoWeekDay })}
+							placeholder="Day(s) of the week"
+						/>
+				<PlainText
+							className="eventTwoDescription"
+							value={attributes.eventTwoDescription}
+							onChange={(eventTwoDescription) => setAttributes({ eventTwoDescription })}
+							placeholder="Description"
+						/>
+				<PlainText
+							className="eventTwoCallToAction"
+							value={attributes.eventTwoCallToAction}
+							onChange={(eventTwoCallToAction) => setAttributes({ eventTwoCallToAction })}
+							placeholder="Call to action"
+						/>
+				<PlainText
+							className="eventTwoCallToActionLink"
+							value={attributes.eventTwoCallToActionLink}
+							onChange={(eventTwoCallToActionLink) => setAttributes({ eventTwoCallToActionLink })}
+							placeholder="Call to action link"
+						/>
+				<PlainText
+							className="eventTwoCallToActionSecondary"
+							value={attributes.eventTwoCallToActionSecondary}
+							onChange={(eventTwoCallToActionSecondary) => setAttributes({ eventTwoCallToActionSecondary })}
+							placeholder="Secondary Call to action"
+						/>
+				<PlainText
+							className="eventTwoCallToActionSecondaryLink"
+							value={attributes.eventTwoCallToActionSecondaryLink}
+							onChange={(eventTwoCallToActionSecondaryLink) => setAttributes({ eventTwoCallToActionSecondaryLink })}
+							placeholder="Secondary Call to action link"
 						/>
 			</div>
 		</div>

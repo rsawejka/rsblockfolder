@@ -979,15 +979,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ edit)
 /* harmony export */ });
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/haws-events/editor.scss");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+
 /**
  * Retrieves the translation of text.
  *
@@ -1004,7 +1003,7 @@ __webpack_require__.r(__webpack_exports__);
 //import { useBlockProps } from '@wordpress/block-editor';
 //import { RichText } from '@wordpress/block-editor';
 
-
+//import { SelectControl, PanelBody, PanelRow, ColorPalette, ColorPicker } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -1013,7 +1012,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 
-
+//import { createElement } from '@wordpress/element';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -1048,54 +1047,138 @@ function edit({
 
   //eventSelectMenu.getElemementbyId('eventSelectMenu').appendChild(eventMenuOption);
 
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)({
       style: divStyles
     })
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "firstEvent"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "eventOneTitle",
     value: attributes.eventOneTitle,
     onChange: eventOneTitle => setAttributes({
       eventOneTitle
     }),
     placeholder: "Title"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "eventOneStart",
     value: attributes.eventOneStart,
     onChange: eventOneStart => setAttributes({
       eventOneStart
     }),
     placeholder: "Start Date"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "eventOneEnd",
     value: attributes.eventOneEnd,
     onChange: eventOneEnd => setAttributes({
       eventOneEnd
     }),
     placeholder: "End Date"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "eventOneWeekDay",
     value: attributes.eventOneWeekDay,
     onChange: eventOneWeekDay => setAttributes({
       eventOneWeekDay
     }),
     placeholder: "Day(s) of the week"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventOneDescription",
+    value: attributes.eventOneDescription,
+    onChange: eventOneDescription => setAttributes({
+      eventOneDescription
+    }),
+    placeholder: "Description"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "eventOneCallToAction",
     value: attributes.eventOneCallToAction,
     onChange: eventOneCallToAction => setAttributes({
       eventOneCallToAction
     }),
     placeholder: "Call to action"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PlainText, {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventOneCallToActionLink",
+    value: attributes.eventOneCallToActionLink,
+    onChange: eventOneCallToActionLink => setAttributes({
+      eventOneCallToActionLink
+    }),
+    placeholder: "Call to action link"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "eventOneCallToActionSecondary",
     value: attributes.eventOneCallToActionSecondary,
     onChange: eventOneCallToActionSecondary => setAttributes({
       eventOneCallToActionSecondary
     }),
     placeholder: "Secondary Call to action"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventOneCallToActionSecondaryLink",
+    value: attributes.eventOneCallToActionSecondaryLink,
+    onChange: eventOneCallToActionSecondaryLink => setAttributes({
+      eventOneCallToActionSecondaryLink
+    }),
+    placeholder: "Secondary Call to action link"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoTitle",
+    value: attributes.eventTwoTitle,
+    onChange: eventTwoTitle => setAttributes({
+      eventTwoTitle
+    }),
+    placeholder: "Title"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoStart",
+    value: attributes.eventTwoStart,
+    onChange: eventTwoStart => setAttributes({
+      eventTwoStart
+    }),
+    placeholder: "Start Date"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoEnd",
+    value: attributes.eventTwoEnd,
+    onChange: eventTwoEnd => setAttributes({
+      eventTwoEnd
+    }),
+    placeholder: "End Date"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoWeekDay",
+    value: attributes.eventTwoWeekDay,
+    onChange: eventTwoWeekDay => setAttributes({
+      eventTwoWeekDay
+    }),
+    placeholder: "Day(s) of the week"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoDescription",
+    value: attributes.eventTwoDescription,
+    onChange: eventTwoDescription => setAttributes({
+      eventTwoDescription
+    }),
+    placeholder: "Description"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoCallToAction",
+    value: attributes.eventTwoCallToAction,
+    onChange: eventTwoCallToAction => setAttributes({
+      eventTwoCallToAction
+    }),
+    placeholder: "Call to action"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoCallToActionLink",
+    value: attributes.eventTwoCallToActionLink,
+    onChange: eventTwoCallToActionLink => setAttributes({
+      eventTwoCallToActionLink
+    }),
+    placeholder: "Call to action link"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoCallToActionSecondary",
+    value: attributes.eventTwoCallToActionSecondary,
+    onChange: eventTwoCallToActionSecondary => setAttributes({
+      eventTwoCallToActionSecondary
+    }),
+    placeholder: "Secondary Call to action"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "eventTwoCallToActionSecondaryLink",
+    value: attributes.eventTwoCallToActionSecondaryLink,
+    onChange: eventTwoCallToActionSecondaryLink => setAttributes({
+      eventTwoCallToActionSecondaryLink
+    }),
+    placeholder: "Secondary Call to action link"
   })));
 }
 
@@ -1204,15 +1287,71 @@ __webpack_require__.r(__webpack_exports__);
       source: 'text',
       selector: '.eventOneWeekDay'
     },
+    eventOneDescription: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventOneDescription'
+    },
     eventOneCallToAction: {
       type: 'string',
       source: 'text',
       selector: '.eventOneCallToAction'
     },
+    eventOneCallToActionLink: {
+      type: 'string',
+      default: '#'
+    },
     eventOneCallToActionSecondary: {
       type: 'string',
       source: 'text',
       selector: '.eventOneCallToActionSecondary'
+    },
+    eventOneCallToActionSecondaryLink: {
+      type: 'string',
+      default: '#'
+    },
+    eventTwoTitle: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoTitle'
+    },
+    eventTwoStart: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoStart'
+    },
+    eventTwoEnd: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoEnd'
+    },
+    eventTwoWeekDay: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoWeekDay'
+    },
+    eventTwoDescription: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoDescription'
+    },
+    eventTwoCallToAction: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoCallToAction'
+    },
+    eventTwoCallToActionLink: {
+      type: 'string',
+      default: '#'
+    },
+    eventTwoCallToActionSecondary: {
+      type: 'string',
+      source: 'text',
+      selector: '.eventTwoCallToActionSecondary'
+    },
+    eventTwoCallToActionSecondaryLink: {
+      type: 'string',
+      default: '#'
     }
   },
   /**
@@ -1280,12 +1419,17 @@ function save({
   attributes
 }) {
   const divStyles = {
-    color: 'black'
+    color: 'black',
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
   };
   const eventCard = {
     border: '2px solid black',
     width: '33%',
-    borderRadius: '30px'
+    borderRadius: '30px',
+    marginRight: '12px'
   };
   const cardTitle = {
     padding: '15px',
@@ -1295,6 +1439,31 @@ function save({
   };
   const cardBodyText = {
     padding: '15px'
+  };
+  const cardDates = {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap'
+  };
+  const callToActionFlex = {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+  };
+  const callToAction = {
+    padding: '10px',
+    border: 'none',
+    marginTop: '5px',
+    marginBottom: '10px',
+    color: 'white',
+    backgroundColor: '#88cd00',
+    borderRadius: '10px',
+    marginRight: '12px'
+  };
+  const eventLink = {
+    color: 'white',
+    textDecoration: 'none'
   };
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "hawsEvents",
@@ -1311,16 +1480,69 @@ function save({
     style: cardBodyText,
     className: "cardBodyText"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: cardDates
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
     className: "eventOneStart"
-  }, attributes.eventOneStart), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, attributes.eventOneStart)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
     className: "eventOneEnd"
-  }, attributes.eventOneEnd), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, attributes.eventOneEnd))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneWeekDay"
-  }, attributes.eventOneWeekDay), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, attributes.eventOneWeekDay)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventOneDescription"
+  }, attributes.eventOneDescription), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: callToActionFlex
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: callToAction
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    style: eventLink,
+    className: "eventOneCallToActionLink",
+    href: attributes.eventOneCallToActionLink
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "eventOneCallToAction"
-  }, attributes.eventOneCallToAction), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, attributes.eventOneCallToAction))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: callToAction
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    style: eventLink,
+    href: attributes.eventOneCallToActionSecondaryLink
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "eventOneCallToActionSecondary"
-  }, attributes.eventOneCallToActionSecondary))));
+  }, attributes.eventOneCallToActionSecondary)))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: eventCard,
+    className: " eventTwoCard"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    style: cardTitle,
+    className: "eventTwoTitle"
+  }, attributes.eventTwoTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: cardBodyText,
+    className: "cardBodyText"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: cardDates
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    className: "eventTwoStart"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, attributes.eventTwoStart)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    className: "eventTwoEnd"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, attributes.eventTwoEnd))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventTwoWeekDay"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, attributes.eventTwoWeekDay)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventTwoDescription"
+  }, attributes.eventTwoDescription), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: callToActionFlex
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: callToAction
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    style: eventLink,
+    className: "eventTwoCallToActionLink",
+    href: attributes.eventTwoCallToActionLink
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    className: "eventTwoCallToAction"
+  }, attributes.eventTwoCallToAction))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: callToAction
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    style: eventLink,
+    href: attributes.eventTwoCallToActionSecondaryLink
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "eventTwoCallToActionSecondary"
+  }, attributes.eventTwoCallToActionSecondary)))))));
 }
 
 /***/ }),

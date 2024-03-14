@@ -100,15 +100,73 @@ registerBlockType( 'rs-blockfolder/haws-events', {
 			source: 'text',
 			selector: '.eventOneWeekDay',
 		},
+		eventOneDescription: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventOneDescription',
+		},
 		eventOneCallToAction: {
 			type: 'string',
 			source: 'text',
 			selector: '.eventOneCallToAction',
 		},
+		eventOneCallToActionLink: {
+			type: 'string',
+			default: '#',
+		},
 		eventOneCallToActionSecondary: {
 			type: 'string',
 			source: 'text',
 			selector: '.eventOneCallToActionSecondary',
+		},
+			eventOneCallToActionSecondaryLink: {
+			type: 'string',
+			default: '#',
+		},
+		
+		
+		eventTwoTitle: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoTitle',
+		},
+		eventTwoStart: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoStart',
+		},
+		eventTwoEnd: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoEnd',
+		},
+		eventTwoWeekDay: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoWeekDay',
+		},
+		eventTwoDescription: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoDescription',
+		},
+		eventTwoCallToAction: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoCallToAction',
+		},
+		eventTwoCallToActionLink: {
+			type: 'string',
+			default: '#',
+		},
+		eventTwoCallToActionSecondary: {
+			type: 'string',
+			source: 'text',
+			selector: '.eventTwoCallToActionSecondary',
+		},
+			eventTwoCallToActionSecondaryLink: {
+			type: 'string',
+			default: '#',	
 		},
 	},
 
