@@ -27,19 +27,30 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	const divStyles = {
-		color: 'blue',
+		color: 'black',
 	}
 	const eventCard = {
 		border: '2px solid black',
-		width: "33%",
+		width: '33%',
+		borderRadius: '30px',
+	}
+	const cardTitle = {
+		padding: '15px',
+		backgroundColor: '#88cd00',
+		border: 'bottom 2px solid #88cd00',
+		borderRadius: '30px 30px 0 0',
+	}
+	const cardBodyText = {
+		padding: '15px',
 	}
 
 	return (
 		<div className='hawsEvents' {...useBlockProps.save({style: divStyles})}>
 			<div style={eventCard} className=' eventOneCard'>
-				<h3 className='eventOneTitle'>
+				<h3 style={cardTitle} className='eventOneTitle'>
 					{attributes.eventOneTitle}
 				</h3>
+				<div style={cardBodyText} className='cardBodyText'>
 				<div className='eventOneStart'>
 					{attributes.eventOneStart}
 				</div>
@@ -54,6 +65,7 @@ export default function save({ attributes }) {
 				</div>
 				<div className='eventOneCallToActionSecondary'>
 					{attributes.eventOneCallToActionSecondary}
+				</div>
 				</div>
 			</div>	
 		</div>
