@@ -325,67 +325,44 @@
   width: 1000% !important;
 }
 
-.wp-block-rs-blockfolder-service-page {
+.wp-block-rs-blockfolder-scout-badges {
   margin: 0 !important;
   padding: 0 !important;
 }
-.wp-block-rs-blockfolder-service-page .tile {
+.wp-block-rs-blockfolder-scout-badges .tile {
   border-radius: 1000px;
   margin: 30px;
 }
-.wp-block-rs-blockfolder-service-page .tile a {
+.wp-block-rs-blockfolder-scout-badges .tile a {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bold;
 }
-.wp-block-rs-blockfolder-service-page .tile:hover a {
+.wp-block-rs-blockfolder-scout-badges .tile:hover a {
   color: #88cd00;
   transition: 0.5s;
 }
-.wp-block-rs-blockfolder-service-page .tileTitle {
-  height: 300px;
-}
-.wp-block-rs-blockfolder-service-page .tileTitle div {
-  padding-top: 125px;
-}
-.wp-block-rs-blockfolder-service-page .tileImg {
-  text-align: center;
-  width: 300px;
-  padding: 0;
-}
-.wp-block-rs-blockfolder-service-page .tileTitle:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-}
-.wp-block-rs-blockfolder-service-page .tileImg:hover {
-  background-color: black;
-}
-
-.flipCard {
+.wp-block-rs-blockfolder-scout-badges .flipCard {
   width: 300px;
   height: 300px;
 }
-
-.flipCardInner {
+.wp-block-rs-blockfolder-scout-badges .flipCardInner {
   width: 100%;
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-
-.flipCard:hover .flipCardInner {
+.wp-block-rs-blockfolder-scout-badges .flipCard:hover .flipCardInner {
   transform: rotateY(180deg);
 }
-
-.flipCardFront, .flipCardBack {
+.wp-block-rs-blockfolder-scout-badges .flipCardFront, .wp-block-rs-blockfolder-scout-badges .flipCardBack {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
-
-.flipCardBack {
+.wp-block-rs-blockfolder-scout-badges .flipCardBack {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);

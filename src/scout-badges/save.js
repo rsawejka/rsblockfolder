@@ -27,6 +27,7 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	const isFillOne = attributes.tileOneTitle;
+	const isFillTwo = attributes.tileTwoTitle;
 
 
 	const imgHeight = '300px';
@@ -43,6 +44,15 @@ export default function save({ attributes }) {
 	const tileOneBackgroundImage = {
 
 		backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
+		height: imgHeight,
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: backgroundSize,
+		borderRadius: borderRadius,
+		width: imgWidth,
+	}
+	const tileTwoBackgroundImage = {
+
+		backgroundImage: "url(" + attributes.tileTwoImgUrl + ")",
 		height: imgHeight,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: backgroundSize,
@@ -75,6 +85,34 @@ export default function save({ attributes }) {
 								<div className="tileInner">
 									<a href={attributes.tileOneUrl}>
 										<div className="tileImg" style={tileOneBackgroundImage}>
+
+										</div>
+									</a>
+								</div>
+							</div>
+							<div className="flipCardBack">
+								<div>ashjdfk</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			) : (
+				<div></div>
+			)}
+			{isFillTwo ? (
+				<div>
+					<div className="tileTitle" style={titleBorder}>
+						<div className='title tileTwoTitle'>
+							{attributes.tileTwoTitle}
+						</div>
+					</div>
+					<div className="flipCard">
+						<div className="flipCardInner">
+							<div className="tile flipCardFront">
+
+								<div className="tileInner">
+									<a href={attributes.tileTwoUrl}>
+										<div className="tileImg" style={tileTwoBackgroundImage}>
 
 										</div>
 									</a>

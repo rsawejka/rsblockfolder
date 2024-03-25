@@ -3508,7 +3508,7 @@ function edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     allowedTypes: ['image'],
     onSelect: tileTwoImg => setAttributes({
-      tileTwoImgUrl: tileTwoImg.sizes.large.url
+      tileTwoImgUrl: tileTwoImg.sizes.thumbnail.url
     }),
     render: ({
       open
@@ -3976,6 +3976,7 @@ function save({
   attributes
 }) {
   const isFillOne = attributes.tileOneTitle;
+  const isFillTwo = attributes.tileTwoTitle;
   const imgHeight = '300px';
   const imgWidth = '300px';
   const backgroundSize = 'contain';
@@ -3989,6 +3990,14 @@ function save({
   };
   const tileOneBackgroundImage = {
     backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
+    height: imgHeight,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: backgroundSize,
+    borderRadius: borderRadius,
+    width: imgWidth
+  };
+  const tileTwoBackgroundImage = {
+    backgroundImage: "url(" + attributes.tileTwoImgUrl + ")",
     height: imgHeight,
     backgroundRepeat: 'no-repeat',
     backgroundSize: backgroundSize,
@@ -4021,6 +4030,26 @@ function save({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileImg",
     style: tileOneBackgroundImage
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flipCardBack"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "ashjdfk"))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillTwo ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTitle",
+    style: titleBorder
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "title tileTwoTitle"
+  }, attributes.tileTwoTitle)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flipCard"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flipCardInner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tile flipCardFront"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileInner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: attributes.tileTwoUrl
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileImg",
+    style: tileTwoBackgroundImage
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "flipCardBack"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "ashjdfk"))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null));
