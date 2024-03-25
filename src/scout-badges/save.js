@@ -31,8 +31,8 @@ export default function save({ attributes }) {
 
 	const imgHeight = '300px';
 	const imgWidth = '300px';
-	const backgroundSize = 'cover';
-	const borderRadius = "150px";
+	const backgroundSize = 'contain';
+	const borderRadius = "0px";
 	const divStyles = {
 		color: 'blue',
 		display: 'flex',
@@ -64,27 +64,27 @@ export default function save({ attributes }) {
 			{isFillOne ? (
 				<div>
 					<div className="tileTitle" style={titleBorder}>
-								<div className='title tileOneTitle'>
-									{attributes.tileOneTitle}
-								</div>
-							</div>
-				<div className="flipCard">
-					<div className="flipCardInner">
-						<div className="tile flipCardFront">
-							
-							<div className="tileInner">
-								<a href={attributes.tileOneUrl}>
-									<div className="tileImg" style={tileOneBackgroundImage}>
-
-									</div>
-								</a>
-							</div>
-						</div>
-						<div className="flipCardBack">
-							<div>ashjdfk</div>
+						<div className='title tileOneTitle'>
+							{attributes.tileOneTitle}
 						</div>
 					</div>
-				</div>
+					<div className="flipCard">
+						<div className="flipCardInner">
+							<div className="tile flipCardFront">
+
+								<div className="tileInner">
+									<a href={attributes.tileOneUrl}>
+										<div className="tileImg" style={tileOneBackgroundImage}>
+
+										</div>
+									</a>
+								</div>
+							</div>
+							<div className="flipCardBack">
+								<div>ashjdfk</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			) : (
 				<div></div>

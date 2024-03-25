@@ -3479,7 +3479,7 @@ function edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     allowedTypes: ['image'],
     onSelect: tileOneImg => setAttributes({
-      tileOneImgUrl: tileOneImg.sizes.large.url
+      tileOneImgUrl: tileOneImg.sizes.thumbnail.url
     }),
     render: ({
       open
@@ -3978,8 +3978,8 @@ function save({
   const isFillOne = attributes.tileOneTitle;
   const imgHeight = '300px';
   const imgWidth = '300px';
-  const backgroundSize = 'cover';
-  const borderRadius = "150px";
+  const backgroundSize = 'contain';
+  const borderRadius = "0px";
   const divStyles = {
     color: 'blue',
     display: 'flex',

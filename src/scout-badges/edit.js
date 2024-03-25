@@ -60,7 +60,7 @@ export default function edit({ attributes, setAttributes }) {
 						<MediaUploadCheck>
 							<MediaUpload
 								allowedTypes={['image']}
-								onSelect={(tileOneImg) => setAttributes({ tileOneImgUrl: tileOneImg.sizes.large.url })}
+								onSelect={(tileOneImg) => setAttributes({ tileOneImgUrl: tileOneImg.sizes.thumbnail.url })}
 								render={({ open }) => <img src={attributes.tileOneImgUrl} onClick={open} />}
 								
 								
