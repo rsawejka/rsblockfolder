@@ -32,7 +32,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType( 'rs-blockfolder/service-page', {
+registerBlockType( 'rs-blockfolder/scout-badges', {
 	/**
 	 * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
 	 */
@@ -42,13 +42,13 @@ registerBlockType( 'rs-blockfolder/service-page', {
 	 * This is the display title for your block, which can be translated with `i18n` functions.
 	 * The block inserter will show this name.
 	 */
-	title: __( 'service-page', 'rs-blockfolder' ),
+	title: __( 'scout-badges', 'rs-blockfolder' ),
 
 	/**
 	 * This is a short description for your block, can be translated with `i18n` functions.
 	 * It will be shown in the Block Tab in the Settings Sidebar.
 	 */
-	description: __( 'service-page', 'rs-blockfolder' ),
+	description: __( 'scout-badges', 'rs-blockfolder' ),
 
 	/**
 	 * Blocks are grouped into categories to help users browse and discover them.
@@ -72,7 +72,7 @@ registerBlockType( 'rs-blockfolder/service-page', {
 
 	keywords: [
 		'block',
-		'service block',
+		'scout-badges',
 		__('test'),
 		__('review'),
 		'rs'
