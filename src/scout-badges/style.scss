@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+$titleHover: red;
+$imgBrightness:  brightness(40%);
+.wf-wrap{
+	width: 1000%!important;
+}
+.wp-block-rs-blockfolder-service-page {
+	margin: 0!important;
+	padding: 0!important;
+
+	.tile{
+		border-radius: 1000px;
+		margin: 30px;
+	}
+	.tile a{
+		color: white;
+		text-decoration: none;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	.tile:hover a{
+		color: #88cd00;
+		transition: .5s;
+		
+	}
+	
+
+.tileTitle{
+	height: 300px;
+	
+}
+.tileTitle div{
+	padding-top: 125px;
+}
+
+.tileImg{
+	text-align: center;
+	width: 300px;
+	padding: 0;
+}
+.tileTitle:hover{
+	background-color: rgb(0, 0, 0,.5);
+	transition: .5s;
+
+}
+.tileImg:hover{
+	background-color: black;
+}
+
+
+
+
+
+
+
+}

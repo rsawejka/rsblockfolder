@@ -9,3 +9,4 @@ import './test/index';
 import './employeebio/index'
 import  './border-control/index';
 import  './board-member/index';
+import  './scout-badges/index';
