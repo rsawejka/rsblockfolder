@@ -64,10 +64,6 @@ export default function save({ attributes }) {
 	const titleBorder = {
 		borderRadius: '150px',
 	}
-
-
-
-
 	return (
 		<div className='servicePage' {...useBlockProps.save({ style: divStyles })}>
 
