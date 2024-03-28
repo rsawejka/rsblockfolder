@@ -114,6 +114,14 @@
 .wp-block-rs-blockfolder-haws-fest .tileTitle {
   width: 300px;
 }
+.wp-block-rs-blockfolder-haws-fest .fa-custom-size {
+  font-size: 15em;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.wp-block-rs-blockfolder-haws-fest .fa-custom-size:hover {
+  color: red;
+}
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/haws-events/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/

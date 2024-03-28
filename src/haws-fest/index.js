@@ -80,110 +80,16 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 
 	//these are the date "fields" we want to store with our blocks
 	attributes: {
-		tileOneImgUrl: {
+		tileOneIcon: {
 			type: 'string',
-			default: 'https://placehold.it/75',
+			default: 'fa-solid fa-paw fa-custom-size',
 		},
-		tileOneTitle: {
+		
+		tileTwoIcon: {
 			type: 'string',
-			source: 'text',
-			selector: '.tileOneTitle',
+			default: 'fa-solid fa-paw fa-custom-size',
 		},
-		tileOneUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileTwoImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileTwoTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileTwoTitle',
-		},
-		tileTwoUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileThreeImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileThreeTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileThreeTitle',
-		},
-		tileThreeUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileFourImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileFourTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileFourTitle',
-		},
-		tileFourUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileFiveImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileFiveTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileFiveTitle',
-		},
-		tileFiveUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileSixImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileSixTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileSixTitle',
-		},
-		tileSixUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileSevenImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileSevenTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileSevenTitle',
-		},
-		tileSevenUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileEightImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileEightTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileEightTitle',
-		},
-		tileEightUrl: {
-			type: 'string',
-			default: '#',
-		},
+		
 	},
 
 	/**

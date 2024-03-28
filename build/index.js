@@ -1626,249 +1626,25 @@ function edit({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileOne"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileOnePhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileOneImg => setAttributes({
-      tileOneImgUrl: tileOneImg.sizes.large.url
+    className: "tileOneIcon"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneIcon",
+    value: attributes.tileOneIcon,
+    onChange: tileOneIcon => setAttributes({
+      tileOneIcon
     }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileOneImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileOneTitle",
-    value: attributes.tileOneTitle,
-    onChange: tileOneTitle => setAttributes({
-      tileOneTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileOneUrl",
-    value: attributes.tileOneUrl,
-    onChange: tileOneUrl => setAttributes({
-      tileOneUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
+    placeholder: "FA Icon"
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileTwo"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileTwoPhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileTwoImg => setAttributes({
-      tileTwoImgUrl: tileTwoImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileTwoImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileTwoTitleBlock"
+    className: "tileTwoIcon"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileTwoTitle",
-    value: attributes.tileTwoTitle,
-    onChange: tileTwoTitle => setAttributes({
-      tileTwoTitle
+    className: "tileTwoIcon",
+    value: attributes.tileTwoIcon,
+    onChange: tileTwoIcon => setAttributes({
+      tileTwoIcon
     }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileTwoUrl",
-    value: attributes.tileTwoUrl,
-    onChange: tileTwoUrl => setAttributes({
-      tileTwoUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileThree"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileThreePhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileThreeImg => setAttributes({
-      tileThreeImgUrl: tileThreeImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileThreeImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileThreeTitleBlock"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileThreeTitle",
-    value: attributes.tileThreeTitle,
-    onChange: tileThreeTitle => setAttributes({
-      tileThreeTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileThreeUrl",
-    value: attributes.tileThreeUrl,
-    onChange: tileThreeUrl => setAttributes({
-      tileThreeUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileFour"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileFourPhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileFourImg => setAttributes({
-      tileFourImgUrl: tileFourImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileFourImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileFourTitleBlock"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileFourTitle",
-    value: attributes.tileFourTitle,
-    onChange: tileFourTitle => setAttributes({
-      tileFourTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileFourUrl",
-    value: attributes.tileFourUrl,
-    onChange: tileFourUrl => setAttributes({
-      tileFourUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileFive"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileFivePhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileFiveImg => setAttributes({
-      tileFiveImgUrl: tileFiveImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileFiveImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileFiveTitleBlock"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileFiveTitle",
-    value: attributes.tileFiveTitle,
-    onChange: tileFiveTitle => setAttributes({
-      tileFiveTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileFiveUrl",
-    value: attributes.tileFiveUrl,
-    onChange: tileFiveUrl => setAttributes({
-      tileFiveUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileSix"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileSixPhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileSixImg => setAttributes({
-      tileSixImgUrl: tileSixImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileSixImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileSixTitleBlock"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileSixTitle",
-    value: attributes.tileSixTitle,
-    onChange: tileSixTitle => setAttributes({
-      tileSixTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileSixUrl",
-    value: attributes.tileSixUrl,
-    onChange: tileSixUrl => setAttributes({
-      tileSixUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileSeven"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileSevenPhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileSevenImg => setAttributes({
-      tileSevenImgUrl: tileSevenImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileSevenImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileSevenTitleBlock"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileSevenTitle",
-    value: attributes.tileSevenTitle,
-    onChange: tileSevenTitle => setAttributes({
-      tileSevenTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileSevenUrl",
-    value: attributes.tileSevenUrl,
-    onChange: tileSevenUrl => setAttributes({
-      tileSevenUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileEight"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileEightPhoto"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    allowedTypes: ['image'],
-    onSelect: tileEightImg => setAttributes({
-      tileEightImgUrl: tileEightImg.sizes.large.url
-    }),
-    render: ({
-      open
-    }) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      src: attributes.tileEightImgUrl,
-      onClick: open
-    })
-  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileEightTitleBlock"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileEightTitle",
-    value: attributes.tileEightTitle,
-    onChange: tileEightTitle => setAttributes({
-      tileEightTitle
-    }),
-    placeholder: "Title"
-  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
-    className: "tileEightUrl",
-    value: attributes.tileEightUrl,
-    onChange: tileEightUrl => setAttributes({
-      tileEightUrl
-    }),
-    placeholder: "URL MUST INCLUDE HTTPS://"
+    placeholder: "FA Icon"
   })))));
 }
 
@@ -1957,109 +1733,13 @@ __webpack_require__.r(__webpack_exports__);
   keywords: ['block', 'haws-fest', (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('test'), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('review'), 'rs'],
   //these are the date "fields" we want to store with our blocks
   attributes: {
-    tileOneImgUrl: {
+    tileOneIcon: {
       type: 'string',
-      default: 'https://placehold.it/75'
+      default: 'fa-solid fa-paw fa-custom-size'
     },
-    tileOneTitle: {
+    tileTwoIcon: {
       type: 'string',
-      source: 'text',
-      selector: '.tileOneTitle'
-    },
-    tileOneUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileTwoImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileTwoTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileTwoTitle'
-    },
-    tileTwoUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileThreeImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileThreeTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileThreeTitle'
-    },
-    tileThreeUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileFourImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileFourTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileFourTitle'
-    },
-    tileFourUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileFiveImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileFiveTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileFiveTitle'
-    },
-    tileFiveUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileSixImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileSixTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileSixTitle'
-    },
-    tileSixUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileSevenImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileSevenTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileSevenTitle'
-    },
-    tileSevenUrl: {
-      type: 'string',
-      default: '#'
-    },
-    tileEightImgUrl: {
-      type: 'string',
-      default: 'https://placehold.it/75'
-    },
-    tileEightTitle: {
-      type: 'string',
-      source: 'text',
-      selector: '.tileEightTitle'
-    },
-    tileEightUrl: {
-      type: 'string',
-      default: '#'
+      default: 'fa-solid fa-paw fa-custom-size'
     }
   },
   /**
@@ -2126,23 +1806,13 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
-  const isFillOne = attributes.tileOneTitle;
-  const imgHeight = '300px';
-  const backgroundSize = 'cover';
-  const borderRadius = "150px";
+  const isFillOne = attributes.tileOneIcon;
+  const isFillTwo = attributes.tileTwoIcon;
   const divStyles = {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center'
-  };
-  const tileOneBackgroundImage = {
-    backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
-    height: "300px",
-    width: "100%"
-  };
-  const titleBorder = {
-    borderRadius: '150px'
   };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "haws-fest",
@@ -2156,17 +1826,53 @@ function save({
     className: "tile"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileInner"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: attributes.tileOneUrl
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
+    className: attributes.tileOneIcon
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal fade",
+    id: "exampleModalCenter",
+    tabindex: "-1",
+    role: "dialog",
+    "aria-labelledby": "exampleModalCenterTitle",
+    "aria-hidden": "true"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileImg",
-    style: tileOneBackgroundImage
+    class: "modal-dialog modal-dialog-centered",
+    role: "document"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "tileTitle",
-    style: titleBorder
+    class: "modal-content"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "title tileOneTitle"
-  }, attributes.tileOneTitle))))))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-header"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
+    class: "modal-title",
+    id: "exampleModalLongTitle"
+  }, "Modal title"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "close",
+    "data-dismiss": "modal",
+    "aria-label": "Close"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    "aria-hidden": "true"
+  }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-body"
+  }, "..."), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-footer"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "btn btn-secondary",
+    "data-dismiss": "modal"
+  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "btn btn-primary"
+  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillTwo ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    "data-toggle": "modal",
+    "data-target": "#exampleModalCenter"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tile"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileInner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
+    className: attributes.tileTwoIcon
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal fade",
     id: "exampleModalCenter",
     tabindex: "-1",

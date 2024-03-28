@@ -26,28 +26,15 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 
 export default function save({ attributes }) {
-	const isFillOne = attributes.tileOneTitle;
+	const isFillOne = attributes.tileOneIcon;
+	const isFillTwo = attributes.tileTwoIcon;
 
-
-	const imgHeight = '300px';
-	const backgroundSize = 'cover';
-	const borderRadius = "150px";
 	const divStyles = {
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
 		justifyContent: 'center',
 	}
-	const tileOneBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
-		height: "300px",
-		width: "100%",
-
-	}
-	const titleBorder = {
-		borderRadius: '150px'
-	}
-
 	return (
 		<div className='haws-fest' {...useBlockProps.save({ style: divStyles })}>
 
@@ -56,15 +43,7 @@ export default function save({ attributes }) {
 					<div  data-toggle="modal" data-target="#exampleModalCenter">
 						<div className="tile">
 							<div className="tileInner">
-								<a href={attributes.tileOneUrl}>
-									<div className="tileImg" style={tileOneBackgroundImage}>
-										<div className="tileTitle" style={titleBorder}>
-											<div className='title tileOneTitle'>
-												{attributes.tileOneTitle}
-											</div>
-										</div>
-									</div>
-								</a>
+							<i className={attributes.tileOneIcon}></i>
 							</div>
 						</div>
 					</div>
@@ -92,8 +71,39 @@ export default function save({ attributes }) {
 			) : (
 				<div></div>
 			)}
+			{isFillTwo ? (
+				<div>
+					<div  data-toggle="modal" data-target="#exampleModalCenter">
+						<div className="tile">
+							<div className="tileInner">
+							<i className={attributes.tileTwoIcon}></i>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-
+			) : (
+				<div></div>
+			)}
 		</div>
 	);
 }
