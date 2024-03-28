@@ -14,14 +14,17 @@
 	}
 	i{
 		font-size: 15em;
-		margin-left: 90px;
-		margin-right: 90px;
+		margin-left: 60px;
+		margin-right: 60px;
 		margin-bottom: 50px;
 		color:#88cd00;
 		border: 2px solid #88cd00;
 		border-radius: 30px;
 		padding: 30px;
 
+	}
+	#tileFourModal{
+		--bs-modal-width: 80%!important;
 	}
 	i:hover{
 		color: #006747;
@@ -58,9 +61,16 @@
 		padding-bottom: 7px;
 	}
 	.tileFourPics{
-		width: 450px;
-	}
+		display: block;
+		width: 50%;
+	margin: 0 auto;	
+}
 	#contact{
 		padding: 20px;
+	}
+	.prizeFlex{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
  }

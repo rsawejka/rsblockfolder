@@ -154,6 +154,14 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 			type: 'string',
 			default: 'https://placehold.it/75',
 		},
+		tileThreeModalPrizeOneBUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileThreeModalPrizeOneCUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
 		tileThreeModalPrizeTwo: {
 			type: 'string',
 			default: 'Tile 3 modal prize two',

@@ -1795,6 +1795,32 @@ function edit({
       onClick: open
     })
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThreeModalPrizeOneBPic"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileThreeModalPrizeOneBPic => setAttributes({
+      tileThreeModalPrizeOneBUrl: tileThreeModalPrizeOneBPic.sizes.thumbnail.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileThreeModalPrizeOneBUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThreeModalPrizeOneCPic"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileThreeModalPrizeOneCPic => setAttributes({
+      tileThreeModalPrizeOneCUrl: tileThreeModalPrizeOneCPic.sizes.thumbnail.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileThreeModalPrizeOneCUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileThreeModalPrizeTwo"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "tileThreeModalPrizeTwo",
@@ -2099,6 +2125,14 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       default: 'https://placehold.it/75'
     },
+    tileThreeModalPrizeOneBUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileThreeModalPrizeOneCUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
     tileThreeModalPrizeTwo: {
       type: 'string',
       default: 'Tile 3 modal prize two'
@@ -2375,9 +2409,15 @@ function save({
     className: "prizeSep"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "Goal: $50")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "prizePadding"
-  }, "Prize: ", attributes.tileThreeModalPrizeOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+  }, "Prize: ", attributes.tileThreeModalPrizeOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "prizeFlex"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: attributes.tileThreeModalPrizeOneUrl
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: attributes.tileThreeModalPrizeOneBUrl
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: attributes.tileThreeModalPrizeOneCUrl
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "prizeSep"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "Goal: $200"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "prizePadding"

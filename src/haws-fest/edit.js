@@ -208,6 +208,24 @@ export default function edit({ attributes, setAttributes }) {
 							/>
 						</MediaUploadCheck>
 					</div>
+					<div className="tileThreeModalPrizeOneBPic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeOneBPic) => setAttributes({ tileThreeModalPrizeOneBUrl: tileThreeModalPrizeOneBPic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeOneBUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
+					</div>
+					<div className="tileThreeModalPrizeOneCPic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeOneCPic) => setAttributes({ tileThreeModalPrizeOneCUrl: tileThreeModalPrizeOneCPic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeOneCUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
+					</div>
 					<div className="tileThreeModalPrizeTwo">
 						<PlainText
 							className="tileThreeModalPrizeTwo"

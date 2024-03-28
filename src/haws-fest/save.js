@@ -140,7 +140,11 @@ export default function save({ attributes }) {
 									<div className='prizeSep'>
 										<div><b>Goal: $50</b></div>
 										<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeOne}</div>
+										<div className='prizeFlex'>
 										<img src={attributes.tileThreeModalPrizeOneUrl}></img>
+										<img src={attributes.tileThreeModalPrizeOneBUrl}></img>
+										<img src={attributes.tileThreeModalPrizeOneCUrl}></img>
+										</div>
 									</div>
 									<div className='prizeSep'>
 										<div><b>Goal: $200</b>
