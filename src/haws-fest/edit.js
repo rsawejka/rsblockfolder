@@ -64,6 +64,14 @@ export default function edit({ attributes, setAttributes }) {
 							placeholder="FA Icon"
 						/>
 					</div>
+					<div className="tileOneModalTitle">
+					<PlainText
+							className="tileOneModalTitle"
+							value={attributes.tileOneModalTitle}
+							onChange={(tileOneModalTitle) => setAttributes({ tileOneModalTitle })}
+							placeholder="FA Icon"
+						/>
+					</div>
 					
 				</div>
 				<div className='tileTwo'>

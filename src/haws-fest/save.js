@@ -53,13 +53,13 @@ export default function save({ attributes }) {
 						<div class="modal-dialog modal-dialog-centered" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLongTitle">Modal title 1</h5>
+									<h5 class="modal-title" id="exampleModalLongTitle">{attributes.tileOneModalTitle}</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
 								<div class="modal-body">
-									...
+									<h6>When is it?</h6>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

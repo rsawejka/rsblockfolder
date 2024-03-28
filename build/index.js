@@ -1634,6 +1634,15 @@ function edit({
       tileOneIcon
     }),
     placeholder: "FA Icon"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalTitle"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalTitle",
+    value: attributes.tileOneModalTitle,
+    onChange: tileOneModalTitle => setAttributes({
+      tileOneModalTitle
+    }),
+    placeholder: "FA Icon"
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileTwo"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1759,6 +1768,10 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       default: 'fa-solid fa-paw'
     },
+    tileOneModalTitle: {
+      type: 'string',
+      default: 'Modal 1 Title'
+    },
     tileTwoIcon: {
       type: 'string',
       default: 'fa-solid fa-paw'
@@ -1877,7 +1890,7 @@ function save({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
     class: "modal-title",
     id: "exampleModalLongTitle"
-  }, "Modal title 1"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, attributes.tileOneModalTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     class: "close",
     "data-dismiss": "modal",
@@ -1886,7 +1899,7 @@ function save({
     "aria-hidden": "true"
   }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-body"
-  }, "..."), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "When is it?")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-footer"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
