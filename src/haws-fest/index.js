@@ -82,12 +82,20 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 	attributes: {
 		tileOneIcon: {
 			type: 'string',
-			default: 'fa-solid fa-paw fa-custom-size',
+			default: 'fa-solid fa-paw',
 		},
 		
 		tileTwoIcon: {
 			type: 'string',
-			default: 'fa-solid fa-paw fa-custom-size',
+			default: 'fa-solid fa-paw',
+		},
+		tileThreeIcon: {
+			type: 'string',
+			default: 'fa-solid fa-paw',
+		},
+		tileFourIcon: {
+			type: 'string',
+			default: 'fa-solid fa-paw',
 		},
 		
 	},

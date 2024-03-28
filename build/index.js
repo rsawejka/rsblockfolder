@@ -1622,7 +1622,7 @@ function edit({
       style: divStyles
     })
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "servicePage"
+    className: "haws-fest"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileOne"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1643,6 +1643,28 @@ function edit({
     value: attributes.tileTwoIcon,
     onChange: tileTwoIcon => setAttributes({
       tileTwoIcon
+    }),
+    placeholder: "FA Icon"
+  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThree"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThreeIcon"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileThreeIcon",
+    value: attributes.tileThreeIcon,
+    onChange: tileThreeIcon => setAttributes({
+      tileThreeIcon
+    }),
+    placeholder: "FA Icon"
+  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFour"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourIcon"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourIcon",
+    value: attributes.tileFourIcon,
+    onChange: tileFourIcon => setAttributes({
+      tileFourIcon
     }),
     placeholder: "FA Icon"
   })))));
@@ -1735,11 +1757,19 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     tileOneIcon: {
       type: 'string',
-      default: 'fa-solid fa-paw fa-custom-size'
+      default: 'fa-solid fa-paw'
     },
     tileTwoIcon: {
       type: 'string',
-      default: 'fa-solid fa-paw fa-custom-size'
+      default: 'fa-solid fa-paw'
+    },
+    tileThreeIcon: {
+      type: 'string',
+      default: 'fa-solid fa-paw'
+    },
+    tileFourIcon: {
+      type: 'string',
+      default: 'fa-solid fa-paw'
     }
   },
   /**
@@ -1808,6 +1838,8 @@ function save({
 }) {
   const isFillOne = attributes.tileOneIcon;
   const isFillTwo = attributes.tileTwoIcon;
+  const isFillThree = attributes.tileThreeIcon;
+  const isFillFour = attributes.tileFourIcon;
   const divStyles = {
     display: 'flex',
     flexDirection: 'row',
@@ -1821,7 +1853,7 @@ function save({
     })
   }, isFillOne ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     "data-toggle": "modal",
-    "data-target": "#exampleModalCenter"
+    "data-target": "#tileOneModal"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tile"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1830,10 +1862,10 @@ function save({
     className: attributes.tileOneIcon
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal fade",
-    id: "exampleModalCenter",
+    id: "tileOneModal",
     tabindex: "-1",
     role: "dialog",
-    "aria-labelledby": "exampleModalCenterTitle",
+    "aria-labelledby": "tileOneModal",
     "aria-hidden": "true"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-dialog modal-dialog-centered",
@@ -1845,7 +1877,7 @@ function save({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
     class: "modal-title",
     id: "exampleModalLongTitle"
-  }, "Modal title"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, "Modal title 1"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     class: "close",
     "data-dismiss": "modal",
@@ -1865,7 +1897,7 @@ function save({
     class: "btn btn-primary"
   }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillTwo ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     "data-toggle": "modal",
-    "data-target": "#exampleModalCenter"
+    "data-target": "#tileTwoModal"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tile"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1874,10 +1906,10 @@ function save({
     className: attributes.tileTwoIcon
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal fade",
-    id: "exampleModalCenter",
+    id: "tileTwoModal",
     tabindex: "-1",
     role: "dialog",
-    "aria-labelledby": "exampleModalCenterTitle",
+    "aria-labelledby": "tileTwoModal",
     "aria-hidden": "true"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-dialog modal-dialog-centered",
@@ -1889,7 +1921,95 @@ function save({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
     class: "modal-title",
     id: "exampleModalLongTitle"
-  }, "Modal title"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, "Modal title 2"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "close",
+    "data-dismiss": "modal",
+    "aria-label": "Close"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    "aria-hidden": "true"
+  }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-body"
+  }, "..."), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-footer"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "btn btn-secondary",
+    "data-dismiss": "modal"
+  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "btn btn-primary"
+  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillThree ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    "data-toggle": "modal",
+    "data-target": "#tileThreeModal"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tile"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileInner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
+    className: attributes.tileThreeIcon
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal fade",
+    id: "tileThreeModal",
+    tabindex: "-1",
+    role: "dialog",
+    "aria-labelledby": "tileThreeModal",
+    "aria-hidden": "true"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-dialog modal-dialog-centered",
+    role: "document"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-content"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-header"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
+    class: "modal-title",
+    id: "exampleModalLongTitle"
+  }, "Modal title 3"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "close",
+    "data-dismiss": "modal",
+    "aria-label": "Close"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    "aria-hidden": "true"
+  }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-body"
+  }, "..."), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-footer"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "btn btn-secondary",
+    "data-dismiss": "modal"
+  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    type: "button",
+    class: "btn btn-primary"
+  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillFour ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    "data-toggle": "modal",
+    "data-target": "#tileFourModal"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tile"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileInner"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
+    className: attributes.tileFourIcon
+  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal fade",
+    id: "tileFourModal",
+    tabindex: "-1",
+    role: "dialog",
+    "aria-labelledby": "tileFourModal",
+    "aria-hidden": "true"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-dialog modal-dialog-centered",
+    role: "document"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-content"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "modal-header"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
+    class: "modal-title",
+    id: "exampleModalLongTitle"
+  }, "Modal title4"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     class: "close",
     "data-dismiss": "modal",

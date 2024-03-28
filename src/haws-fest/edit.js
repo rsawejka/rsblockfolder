@@ -53,7 +53,7 @@ export default function edit({ attributes, setAttributes }) {
 	return (
 		<div {...useBlockProps({ style: divStyles })}>
 
-			<div className="servicePage">
+			<div className="haws-fest">
 				<div className='tileOne'>
 
 					<div className="tileOneIcon">
@@ -75,9 +75,26 @@ export default function edit({ attributes, setAttributes }) {
 							placeholder="FA Icon"
 						/>
 					</div>
-					
-
-					
+				</div>
+				<div className='tileThree'>
+				<div className="tileThreeIcon">
+					<PlainText
+							className="tileThreeIcon"
+							value={attributes.tileThreeIcon}
+							onChange={(tileThreeIcon) => setAttributes({ tileThreeIcon })}
+							placeholder="FA Icon"
+						/>
+					</div>
+				</div>
+				<div className='tileFour'>
+				<div className="tileFourIcon">
+					<PlainText
+							className="tileFourIcon"
+							value={attributes.tileFourIcon}
+							onChange={(tileFourIcon) => setAttributes({ tileFourIcon })}
+							placeholder="FA Icon"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
