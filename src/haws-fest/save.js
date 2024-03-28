@@ -27,219 +27,68 @@ import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	const isFillOne = attributes.tileOneTitle;
-	const isFillTwo = attributes.tileTwoTitle;
-	const isFillThree = attributes.tileThreeTitle;
-	const isFillFour = attributes.tileFourTitle;
-	const isFillFive = attributes.tileFiveTitle;
-	const isFillSix = attributes.tileSixTitle;
-	const isFillSeven = attributes.tileSevenTitle;
-	const isFillEight = attributes.tileEightTitle;
+
 
 	const imgHeight = '300px';
 	const backgroundSize = 'cover';
 	const borderRadius = "150px";
 	const divStyles = {
-		color: 'blue',
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
 		justifyContent: 'center',
 	}
 	const tileOneBackgroundImage = {
-
 		backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
+		height: "300px",
+		width: "100%",
 
-	const tileTwoBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileTwoImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
-	const tileThreeBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileThreeImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
-	const tileFourBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileFourImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
-	const tileFiveBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileFiveImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
-	const tileSixBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileSixImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
-	const tileSevenBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileSevenImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-	}
-	const tileEightBackgroundImage = {
-		backgroundImage: "url(" + attributes.tileEightImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
 	}
 	const titleBorder = {
 		borderRadius: '150px'
 	}
 
 	return (
-		<div className='hawsFest' {...useBlockProps.save({ style: divStyles })}>
+		<div className='haws-fest' {...useBlockProps.save({ style: divStyles })}>
 
 			{isFillOne ? (
-				<div className="tile">
-					<div className='title tileOneTitle'>{attributes.tileOneTitle}</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileOneBackgroundImage}>
-							<div className="tileTitle" style={titleBorder}>
-								</div>
-							</div>
-							
-							
-						
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillTwo ? (
-				<div className="tile">
-					<div className='title tileTwoTitle'>{attributes.tileTwoTitle}</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileTwoBackgroundImage}>
-								
-							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
-								</div>
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillThree ? (
-				<div className="tile">
-					<div className='title tileThreeTitle'>
-										{attributes.tileThreeTitle}
+				<div>
+					<div  data-toggle="modal" data-target="#exampleModalCenter">
+						<div className="tile">
+							<div className="tileInner">
+								<a href={attributes.tileOneUrl}>
+									<div className="tileImg" style={tileOneBackgroundImage}>
+										<div className="tileTitle" style={titleBorder}>
+											<div className='title tileOneTitle'>
+												{attributes.tileOneTitle}
+											</div>
+										</div>
 									</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileThreeBackgroundImage}>
-								
+								</a>
 							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
+						</div>
+					</div>
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
 								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillFour ? (
-				<div className="tile">
-					<div className='title tileFourTitle'>
-										{attributes.tileFourTitle}
-									</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileFourBackgroundImage}>
-								
-							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
-								</div>
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillFive ? (
-				<div className="tile">
-					<div className='title tileFiveTitle'>
-										{attributes.tileFiveTitle}
-									</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileFiveBackgroundImage}>
-								
-							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
-								</div>
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillSix ? (
-				<div className="tile">
-					<div className='title tileSixTitle'>
-										{attributes.tileSixTitle}
-									</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileSixBackgroundImage}>
-								
-							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
-								</div>
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillSeven ? (
-				<div className="tile">
-					<div className='title tileSevenTitle'>
-										{attributes.tileSevenTitle}
-									</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileSevenBackgroundImage}>
-								
-							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
-								</div>
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillEight ? (
-				<div className="tile">
-					<div className='title tileEightTitle'>
-										{attributes.tileEightTitle}
-									</div>
-					<div className="tileInner">
-							<div className="tileImg" style={tileEightBackgroundImage}>
-								
-							</div>
-							<div className="tileTitle" style={titleBorder}>
-									
-								</div>
-					</div>
-				</div>
+
 			) : (
 				<div></div>
 			)}
@@ -248,3 +97,6 @@ export default function save({ attributes }) {
 		</div>
 	);
 }
+
+
+

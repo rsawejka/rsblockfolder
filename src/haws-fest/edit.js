@@ -53,7 +53,7 @@ export default function edit({ attributes, setAttributes }) {
 	return (
 		<div {...useBlockProps({ style: divStyles })}>
 
-			<div className="hawsFest">
+			<div className="servicePage">
 				<div className='tileOne'>
 
 					<div className="tileOnePhoto">

@@ -4,46 +4,12 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-$titleHover: red;
-$imgBrightness:  brightness(40%);
-.wf-wrap{
-	width: 1000%!important;
-}
-.wp-block-rs-blockfolder-haws-fest {
-	margin: 0!important;
-	padding: 0!important;
-
+ .wp-block-rs-blockfolder-haws-fest {
+	width: 100%;
 	.tile{
-		border-radius: 1000px;
-		margin: 30px;
-		text-align: center;
-		font-size: 2em;
-		color: black;
-		padding-bottom: 10px;
+		width: 100%;
 	}
-
-	
-	
-
-.tileTitle{
-	
-	align-content: center;
-	
-}
-.tileTitle div{
-	padding-top: 125px;
-}
-
-.tileImg{
-	width: 300px;
-	padding: 0;
-}
-
-
-
-
-
-
-
-
-}
+	.tileTitle{
+		width: 300px;
+	}
+ }
