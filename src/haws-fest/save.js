@@ -127,13 +127,43 @@ export default function save({ attributes }) {
 						<div class="modal-dialog modal-dialog-centered" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLongTitle">Modal title 3</h5>
+									<h5 class="modal-title" id="exampleModalLongTitle">{attributes.tileThreeModalTitle}</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
 								<div class="modal-body">
-									...
+									<div>{attributes.tileThreeModalDescription}</div>
+									<div id='buttonContainer'>
+									<a href={attributes.tileThreeModalLink} className='hawsButton'>Start Here!</a>
+									</div>
+									<div className='prizeSep'>
+									<div><b>Goal: $50</b></div>
+									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeOne}</div>
+									<img src={attributes.tileThreeModalPrizeOneUrl}></img>
+									</div>
+									<div className='prizeSep'>
+									<div><b>Goal: $200</b>
+									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeTwo}</div>
+									<img src={attributes.tileThreeModalPrizeTwoUrl}></img>
+									<div><b>*All prizes above are included</b></div>
+									</div>
+									<div className='prizeSep'></div>
+									<div><b>Goal: $400</b>
+									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeThree}</div>
+									<img src={attributes.tileThreeModalPrizeThreeUrl}></img>
+									<div><b>*All prizes above are included</b></div>
+									</div>
+									<div className='prizeSep'></div>
+									<div><b>Goal: $750</b></div>
+									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeFour}</div>
+									<img src={attributes.tileThreeModalPrizeFourUrl}></img>
+									<div><b>*All prizes above are included</b></div>
+									</div>
+									<div><b>Goal: $1000</b></div>
+									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeFive}</div>
+									<img src={attributes.tileThreeModalPrizeFiveUrl}></img>
+									<div><b>*All prizes above are included</b></div>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

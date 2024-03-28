@@ -146,12 +146,15 @@ export default function edit({ attributes, setAttributes }) {
 							onChange={(tileTwoModalTitle) => setAttributes({ tileTwoModalTitle })}
 							placeholder="Modal 2 title"
 						/>
+					</div>
+					<div>
 						<RichText
 							tagName="ul"
+							multiline="li"
 							value={attributes.tileTwoModalList}
 							allowedFormats={['core/bold', 'core/italic', 'core/html']}
 							onChange={(tileTwoModalList) => setAttributes({ tileTwoModalList })}
-							placeholder={__('heading...')}
+							placeholder={__('tile 2 list')}
 						/>
 					</div>
 				</div>
@@ -161,8 +164,117 @@ export default function edit({ attributes, setAttributes }) {
 							className="tileThreeIcon"
 							value={attributes.tileThreeIcon}
 							onChange={(tileThreeIcon) => setAttributes({ tileThreeIcon })}
-							placeholder="FA Icon"
+							placeholder="tile 3 FA Icon"
 						/>
+					</div>
+					<div className="tileThreeModalTitle">
+						<PlainText
+							className="tileThreeModalTitle"
+							value={attributes.tileThreeModalTitle}
+							onChange={(tileThreeModalTitle) => setAttributes({ tileThreeModalTitle })}
+							placeholder="Tile 3 modal title"
+						/>
+					</div>
+					<div className="tileThreeModalLink">
+						<PlainText
+							className="tileThreeModalLink"
+							value={attributes.tileThreeModalLink}
+							onChange={(tileThreeModalLink) => setAttributes({ tileThreeModalLink })}
+							placeholder="Tile 3 modal link"
+						/>
+					</div>
+					<div className="tileThreeModalDescription">
+						<PlainText
+							className="tileThreeModalDescription"
+							value={attributes.tileThreeModalDescription}
+							onChange={(tileThreeModalDescription) => setAttributes({ tileThreeModalDescription })}
+							placeholder="Tile 3 modal description"
+						/>
+					</div>
+					<div className="tileThreeModalPrizeOne">
+						<PlainText
+							className="tileThreeModalPrizeOne"
+							value={attributes.tileThreeModalPrizeOne}
+							onChange={(tileThreeModalPrizeOne) => setAttributes({ tileThreeModalPrizeOne })}
+							placeholder="Tile 3 modal prize name"
+						/>
+					</div>
+					<div className="tileThreeModalPrizeOnePic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeOnePic) => setAttributes({ tileThreeModalPrizeOneUrl: tileThreeModalPrizeOnePic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeOneUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
+					</div>
+					<div className="tileThreeModalPrizeTwo">
+						<PlainText
+							className="tileThreeModalPrizeTwo"
+							value={attributes.tileThreeModalPrizeTwo}
+							onChange={(tileThreeModalPrizeTwo) => setAttributes({ tileThreeModalPrizeTwo })}
+							placeholder="Tile 3 modal prize name 2"
+						/>
+					</div>
+					<div className="tileThreeModalPrizeTwoPic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeTwoPic) => setAttributes({ tileThreeModalPrizeTwoUrl: tileThreeModalPrizeTwoPic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeTwoUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
+					</div>
+					<div className="tileThreeModalPrizeThree">
+						<PlainText
+							className="tileThreeModalPrizeThree"
+							value={attributes.tileThreeModalPrizeThree}
+							onChange={(tileThreeModalPrizeThree) => setAttributes({ tileThreeModalPrizeThree })}
+							placeholder="Tile 3 modal prize name 3"
+						/>
+					</div>
+					<div className="tileThreeModalPrizeThreePic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeThreePic) => setAttributes({ tileThreeModalPrizeThreeUrl: tileThreeModalPrizeThreePic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeThreeUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
+					</div>
+					<div className="tileThreeModalPrizeFour">
+						<PlainText
+							className="tileThreeModalPrizeFour"
+							value={attributes.tileThreeModalPrizeFour}
+							onChange={(tileThreeModalPrizeFour) => setAttributes({ tileThreeModalPrizeFour })}
+							placeholder="Tile 3 modal prize name 4"
+						/>
+					</div>
+					<div className="tileThreeModalPrizeFourPic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeFourPic) => setAttributes({ tileThreeModalPrizeFourUrl: tileThreeModalPrizeFourPic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeFourUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
+					</div>
+					<div className="tileThreeModalPrizeFive">
+						<PlainText
+							className="tileThreeModalPrizeFive"
+							value={attributes.tileThreeModalPrizeFive}
+							onChange={(tileThreeModalPrizeFive) => setAttributes({ tileThreeModalPrizeFive })}
+							placeholder="Tile 3 modal prize name 5"
+						/>
+					</div>
+					<div className="tileThreeModalPrizeFivePic">
+						<MediaUploadCheck>
+							<MediaUpload
+								allowedTypes={['image']}
+								onSelect={(tileThreeModalPrizeFivePic) => setAttributes({ tileThreeModalPrizeFiveUrl: tileThreeModalPrizeFivePic.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeModalPrizeFiveUrl} onClick={open} />}
+							/>
+						</MediaUploadCheck>
 					</div>
 				</div>
 				<div className='tileFour'>

@@ -134,6 +134,58 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 			type: 'string',
 			default: 'fa-solid fa-paw',
 		},
+		tileThreeModalTitle: {
+			type: 'string',
+			default: 'Tile 3 tittle',
+		},
+		tileThreeModalLink: {
+			type: 'string',
+			default: 'Tile 3 modal link',
+		},
+		tileThreeModalDescription: {
+			type: 'string',
+			default: 'Tile 3 modal discription',
+		},
+		tileThreeModalPrizeOne: {
+			type: 'string',
+			default: 'Tile 3 modal prize one',
+		},
+		tileThreeModalPrizeOneUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileThreeModalPrizeTwo: {
+			type: 'string',
+			default: 'Tile 3 modal prize two',
+		},
+		tileThreeModalPrizeTwoUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileThreeModalPrizeThree: {
+			type: 'string',
+			default: 'Tile 3 modal prize Three',
+		},
+		tileThreeModalPrizeThreeUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileThreeModalPrizeFour: {
+			type: 'string',
+			default: 'Tile 3 modal prize Four',
+		},
+		tileThreeModalPrizeFourUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileThreeModalPrizeFive: {
+			type: 'string',
+			default: 'Tile 3 modal prize Five',
+		},
+		tileThreeModalPrizeFiveUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
 		tileFourIcon: {
 			type: 'string',
 			default: 'fa-solid fa-paw',
