@@ -190,6 +190,26 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 			type: 'string',
 			default: 'fa-solid fa-paw',
 		},
+		tileFourTitle: {
+			type: 'string',
+			default: 'tile 4 title ',
+		},
+		tileFourModalSponsorPicUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileFourModalSponsorSignUpUrl: {
+			type: 'string',
+			default: '#',
+		},
+		tileFourModalVendorPicUrl: {
+			type: 'string',
+			default: 'https://placehold.it/75',
+		},
+		tileFourModalVendorSignUpUrl: {
+			type: 'string',
+			default: '#',
+		},
 		
 	},
 

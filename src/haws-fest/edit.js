@@ -286,6 +286,46 @@ export default function edit({ attributes, setAttributes }) {
 							placeholder="FA Icon"
 						/>
 					</div>
+					<div className="tileFourTitle">
+						<PlainText
+							className="tileFourTitle"
+							value={attributes.tileFourTitle}
+							onChange={(tileFourTitle) => setAttributes({ tileFourTitle })}
+							placeholder="tile 4 title"
+						/>
+					</div>
+					<div className="tileFourModalSponsorPicUrl">
+					<PlainText
+							className="tileFourModalSponsorPicUrl"
+							value={attributes.tileFourModalSponsorPicUrl}
+							onChange={(tileFourModalSponsorPicUrl) => setAttributes({ tileFourModalSponsorPicUrl })}
+							placeholder="tile 4 image url"
+						/>
+					</div>
+					<div className="tileFourModalSponsorSignUpUrl">
+					<PlainText
+							className="tileFourModalSponsorSignUpUrl"
+							value={attributes.tileFourModalSponsorSignUpUrl}
+							onChange={(tileFourModalSponsorSignUpUrl) => setAttributes({ tileFourModalSponsorSignUpUrl })}
+							placeholder="sponsor sign up url"
+						/>
+					</div>
+					<div className="tileFourModalVendorPicUrl">
+					<PlainText
+							className="tileFourModalVendorPicUrl"
+							value={attributes.tileFourModalVendorPicUrl}
+							onChange={(tileFourModalVendorPicUrl) => setAttributes({ tileFourModalVendorPicUrl })}
+							placeholder="tile 4 image url"
+						/>
+					</div>
+					<div className="tileFourModalVendorSignUpUrl">
+					<PlainText
+							className="tileFourModalVendorSignUpUrl"
+							value={attributes.tileFourModalVendorSignUpUrl}
+							onChange={(tileFourModalVendorSignUpUrl) => setAttributes({ tileFourModalVendorSignUpUrl })}
+							placeholder="vendor sign up url"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>

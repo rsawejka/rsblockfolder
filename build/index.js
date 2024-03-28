@@ -1893,6 +1893,51 @@ function edit({
       tileFourIcon
     }),
     placeholder: "FA Icon"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourTitle"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourTitle",
+    value: attributes.tileFourTitle,
+    onChange: tileFourTitle => setAttributes({
+      tileFourTitle
+    }),
+    placeholder: "tile 4 title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourModalSponsorPicUrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourModalSponsorPicUrl",
+    value: attributes.tileFourModalSponsorPicUrl,
+    onChange: tileFourModalSponsorPicUrl => setAttributes({
+      tileFourModalSponsorPicUrl
+    }),
+    placeholder: "tile 4 image url"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourModalSponsorSignUpUrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourModalSponsorSignUpUrl",
+    value: attributes.tileFourModalSponsorSignUpUrl,
+    onChange: tileFourModalSponsorSignUpUrl => setAttributes({
+      tileFourModalSponsorSignUpUrl
+    }),
+    placeholder: "sponsor sign up url"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourModalVendorPicUrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourModalVendorPicUrl",
+    value: attributes.tileFourModalVendorPicUrl,
+    onChange: tileFourModalVendorPicUrl => setAttributes({
+      tileFourModalVendorPicUrl
+    }),
+    placeholder: "tile 4 image url"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourModalVendorSignUpUrl"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourModalVendorSignUpUrl",
+    value: attributes.tileFourModalVendorSignUpUrl,
+    onChange: tileFourModalVendorSignUpUrl => setAttributes({
+      tileFourModalVendorSignUpUrl
+    }),
+    placeholder: "vendor sign up url"
   })))));
 }
 
@@ -2089,6 +2134,26 @@ __webpack_require__.r(__webpack_exports__);
     tileFourIcon: {
       type: 'string',
       default: 'fa-solid fa-paw'
+    },
+    tileFourTitle: {
+      type: 'string',
+      default: 'tile 4 title '
+    },
+    tileFourModalSponsorPicUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileFourModalSponsorSignUpUrl: {
+      type: 'string',
+      default: '#'
+    },
+    tileFourModalVendorPicUrl: {
+      type: 'string',
+      default: 'https://placehold.it/75'
+    },
+    tileFourModalVendorSignUpUrl: {
+      type: 'string',
+      default: '#'
     }
   },
   /**
@@ -2366,7 +2431,7 @@ function save({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
     class: "modal-title",
     id: "exampleModalLongTitle"
-  }, "Modal title4"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, attributes.tileFourTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     class: "close",
     "data-dismiss": "modal",
@@ -2375,7 +2440,29 @@ function save({
     "aria-hidden": "true"
   }, "\xD7"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-body"
-  }, "..."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "tileFourPics",
+    src: attributes.tileFourModalSponsorPicUrl
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    id: "buttonContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: attributes.tileFourModalSponsorSignUpUrl,
+    className: "hawsButton"
+  }, "Sponsor Sign Up")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    className: "tileFourPics",
+    src: attributes.tileFourModalVendorPicUrl
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    id: "buttonContainer"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: attributes.tileFourModalVendorSignUpUrl,
+    className: "hawsButton"
+  }, "Vendor Sign Up"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    id: "contact"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "Please contact us if you have any questions!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "Mackenzie Fink")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "mailto:mackenzie@hawspets.org"
+  }, "mackenzie@hawspets.org")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "Jessica Pinkos")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "mailto:jessica@hawspets.org"
+  }, "jessica@hawspets.org"))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-footer"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",

@@ -116,11 +116,17 @@
 }
 .wp-block-rs-blockfolder-haws-fest i {
   font-size: 15em;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+  color: #88cd00;
+  border: 2px solid #88cd00;
+  border-radius: 30px;
+  padding: 30px;
 }
 .wp-block-rs-blockfolder-haws-fest i:hover {
-  color: red;
+  color: #006747;
+  border: 2px solid #006747;
 }
 .wp-block-rs-blockfolder-haws-fest #tileThreeModal {
   width: 100%;
@@ -141,6 +147,7 @@
 .wp-block-rs-blockfolder-haws-fest #buttonContainer {
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .wp-block-rs-blockfolder-haws-fest .prizePadding {
   padding-top: 10px;
@@ -148,6 +155,12 @@
 .wp-block-rs-blockfolder-haws-fest .prizeSep {
   border-bottom: 2px solid black;
   padding-bottom: 7px;
+}
+.wp-block-rs-blockfolder-haws-fest .tileFourPics {
+  width: 450px;
+}
+.wp-block-rs-blockfolder-haws-fest #contact {
+  padding: 20px;
 }
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/haws-events/style.scss ***!

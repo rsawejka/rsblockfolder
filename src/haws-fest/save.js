@@ -42,10 +42,10 @@ export default function save({ attributes }) {
 
 			{isFillOne ? (
 				<div>
-					<div  data-toggle="modal" data-target="#tileOneModal">
+					<div data-toggle="modal" data-target="#tileOneModal">
 						<div className="tile">
 							<div className="tileInner">
-							<i className={attributes.tileOneIcon}></i>
+								<i className={attributes.tileOneIcon}></i>
 							</div>
 						</div>
 					</div>
@@ -80,10 +80,10 @@ export default function save({ attributes }) {
 			)}
 			{isFillTwo ? (
 				<div>
-					<div  data-toggle="modal" data-target="#tileTwoModal">
+					<div data-toggle="modal" data-target="#tileTwoModal">
 						<div className="tile">
 							<div className="tileInner">
-							<i className={attributes.tileTwoIcon}></i>
+								<i className={attributes.tileTwoIcon}></i>
 							</div>
 						</div>
 					</div>
@@ -99,7 +99,7 @@ export default function save({ attributes }) {
 								<div class="modal-body">
 									<div className='modalTwoList'>
 										<RawHTML>
-										{attributes.tileTwoModalList}
+											{attributes.tileTwoModalList}
 										</RawHTML>
 									</div>
 								</div>
@@ -116,10 +116,10 @@ export default function save({ attributes }) {
 			)}
 			{isFillThree ? (
 				<div>
-					<div  data-toggle="modal" data-target="#tileThreeModal">
+					<div data-toggle="modal" data-target="#tileThreeModal">
 						<div className="tile">
 							<div className="tileInner">
-							<i className={attributes.tileThreeIcon}></i>
+								<i className={attributes.tileThreeIcon}></i>
 							</div>
 						</div>
 					</div>
@@ -135,30 +135,30 @@ export default function save({ attributes }) {
 								<div class="modal-body">
 									<div>{attributes.tileThreeModalDescription}</div>
 									<div id='buttonContainer'>
-									<a href={attributes.tileThreeModalLink} className='hawsButton'>Start Here!</a>
+										<a href={attributes.tileThreeModalLink} className='hawsButton'>Start Here!</a>
 									</div>
 									<div className='prizeSep'>
-									<div><b>Goal: $50</b></div>
-									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeOne}</div>
-									<img src={attributes.tileThreeModalPrizeOneUrl}></img>
+										<div><b>Goal: $50</b></div>
+										<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeOne}</div>
+										<img src={attributes.tileThreeModalPrizeOneUrl}></img>
 									</div>
 									<div className='prizeSep'>
-									<div><b>Goal: $200</b>
-									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeTwo}</div>
-									<img src={attributes.tileThreeModalPrizeTwoUrl}></img>
-									<div><b>*All prizes above are included</b></div>
-									</div>
-									<div className='prizeSep'></div>
-									<div><b>Goal: $400</b>
-									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeThree}</div>
-									<img src={attributes.tileThreeModalPrizeThreeUrl}></img>
-									<div><b>*All prizes above are included</b></div>
-									</div>
-									<div className='prizeSep'></div>
-									<div><b>Goal: $750</b></div>
-									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeFour}</div>
-									<img src={attributes.tileThreeModalPrizeFourUrl}></img>
-									<div><b>*All prizes above are included</b></div>
+										<div><b>Goal: $200</b>
+											<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeTwo}</div>
+											<img src={attributes.tileThreeModalPrizeTwoUrl}></img>
+											<div><b>*All prizes above are included</b></div>
+										</div>
+										<div className='prizeSep'></div>
+										<div><b>Goal: $400</b>
+											<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeThree}</div>
+											<img src={attributes.tileThreeModalPrizeThreeUrl}></img>
+											<div><b>*All prizes above are included</b></div>
+										</div>
+										<div className='prizeSep'></div>
+										<div><b>Goal: $750</b></div>
+										<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeFour}</div>
+										<img src={attributes.tileThreeModalPrizeFourUrl}></img>
+										<div><b>*All prizes above are included</b></div>
 									</div>
 									<div><b>Goal: $1000</b></div>
 									<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeFive}</div>
@@ -178,10 +178,10 @@ export default function save({ attributes }) {
 			)}
 			{isFillFour ? (
 				<div>
-					<div  data-toggle="modal" data-target="#tileFourModal">
+					<div data-toggle="modal" data-target="#tileFourModal">
 						<div className="tile">
 							<div className="tileInner">
-							<i className={attributes.tileFourIcon}></i>
+								<i className={attributes.tileFourIcon}></i>
 							</div>
 						</div>
 					</div>
@@ -189,13 +189,30 @@ export default function save({ attributes }) {
 						<div class="modal-dialog modal-dialog-centered" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLongTitle">Modal title4</h5>
+									<h5 class="modal-title" id="exampleModalLongTitle">{attributes.tileFourTitle}</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
 								<div class="modal-body">
-									...
+									<img className='tileFourPics' src={attributes.tileFourModalSponsorPicUrl}></img>
+									<div id='buttonContainer'>
+										<a href={attributes.tileFourModalSponsorSignUpUrl} className='hawsButton'>Sponsor Sign Up</a>
+									</div>
+
+									<img className='tileFourPics' src={attributes.tileFourModalVendorPicUrl}></img>
+									<div id='buttonContainer'>
+										<a href={attributes.tileFourModalVendorSignUpUrl} className='hawsButton'>Vendor Sign Up</a>
+									</div>
+
+								</div>
+								<div id='contact'>
+									<h6>Please contact us if you have any questions!</h6>
+
+									<div><b>Mackenzie Fink</b></div>
+									<div><a href='mailto:mackenzie@hawspets.org'>mackenzie@hawspets.org</a></div>
+									<div><b>Jessica Pinkos</b></div>
+									<div><a href='mailto:jessica@hawspets.org'>jessica@hawspets.org</a></div>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
