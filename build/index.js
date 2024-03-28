@@ -1717,6 +1717,23 @@ function edit({
       tileTwoIcon
     }),
     placeholder: "FA Icon"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTwoModalTitle"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileTwoModalTitle",
+    value: attributes.tileTwoModalTitle,
+    onChange: tileTwoModalTitle => setAttributes({
+      tileTwoModalTitle
+    }),
+    placeholder: "Modal 2 title"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "ul",
+    value: attributes.tileTwoModalList,
+    allowedFormats: ['core/bold', 'core/italic', 'core/html'],
+    onChange: tileTwoModalList => setAttributes({
+      tileTwoModalList
+    }),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('heading...')
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileThree"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1867,6 +1884,15 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       default: 'fa-solid fa-paw'
     },
+    tileTwoModalTitle: {
+      type: 'string',
+      default: 'modal 2 title'
+    },
+    tileTwoModalList: {
+      type: 'string',
+      source: 'html',
+      selector: '.modalTwoList'
+    },
     tileThreeIcon: {
       type: 'string',
       default: 'fa-solid fa-paw'
@@ -1911,6 +1937,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
 
 /**
  * Retrieves the translation of text.
@@ -2034,7 +2062,7 @@ function save({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h5", {
     class: "modal-title",
     id: "exampleModalLongTitle"
-  }, "Modal title 2"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, attributes.tileTwoModalTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     class: "close",
     "data-dismiss": "modal",
@@ -2043,7 +2071,9 @@ function save({
     "aria-hidden": "true"
   }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-body"
-  }, "..."), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "modalTwoList"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__.RawHTML, null, attributes.tileTwoModalList))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-footer"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",

@@ -121,6 +121,15 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 			type: 'string',
 			default: 'fa-solid fa-paw',
 		},
+		tileTwoModalTitle: {
+			type: 'string',
+			default: 'modal 2 title',
+		},
+		tileTwoModalList: {
+			type: 'string',
+			source: 'html',
+			selector: '.modalTwoList',
+		},
 		tileThreeIcon: {
 			type: 'string',
 			default: 'fa-solid fa-paw',

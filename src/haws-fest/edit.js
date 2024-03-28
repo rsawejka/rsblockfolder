@@ -45,10 +45,10 @@ export default function edit({ attributes, setAttributes }) {
 
 	//drop down and color palate dont work at same time
 	let divStyles = {
-		 backgroundColor: attributes.backgroundColor,
-		 color: attributes.textColor,
+		backgroundColor: attributes.backgroundColor,
+		color: attributes.textColor,
 	}
-	
+
 
 	return (
 		<div {...useBlockProps({ style: divStyles })}>
@@ -57,7 +57,7 @@ export default function edit({ attributes, setAttributes }) {
 				<div className='tileOne'>
 
 					<div className="tileOneIcon">
-					<PlainText
+						<PlainText
 							className="tileOneIcon"
 							value={attributes.tileOneIcon}
 							onChange={(tileOneIcon) => setAttributes({ tileOneIcon })}
@@ -65,7 +65,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalTitle">
-					<PlainText
+						<PlainText
 							className="tileOneModalTitle"
 							value={attributes.tileOneModalTitle}
 							onChange={(tileOneModalTitle) => setAttributes({ tileOneModalTitle })}
@@ -73,7 +73,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalDates">
-					<PlainText
+						<PlainText
 							className="tileOneModalDates"
 							value={attributes.tileOneModalDates}
 							onChange={(tileOneModalDates) => setAttributes({ tileOneModalDates })}
@@ -81,7 +81,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalWho">
-					<PlainText
+						<PlainText
 							className="tileOneModalWho"
 							value={attributes.tileOneModalWho}
 							onChange={(tileOneModalWho) => setAttributes({ tileOneModalWho })}
@@ -89,7 +89,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalWhere">
-					<PlainText
+						<PlainText
 							className="tileOneModalWhere"
 							value={attributes.tileOneModalWhere}
 							onChange={(tileOneModalWhere) => setAttributes({ tileOneModalWhere })}
@@ -97,7 +97,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalAdress">
-					<PlainText
+						<PlainText
 							className="tileOneModalAdress"
 							value={attributes.tileOneModalAdress}
 							onChange={(tileOneModalAdress) => setAttributes({ tileOneModalAdress })}
@@ -105,7 +105,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalDetails">
-					<PlainText
+						<PlainText
 							className="tileOneModalDetails"
 							value={attributes.tileOneModalDetails}
 							onChange={(tileOneModalDetails) => setAttributes({ tileOneModalDetails })}
@@ -113,7 +113,7 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalDetailsTwo">
-					<PlainText
+						<PlainText
 							className="tileOneModalDetailsTwo"
 							value={attributes.tileOneModalDetailsTwo}
 							onChange={(tileOneModalDetailsTwo) => setAttributes({ tileOneModalDetailsTwo })}
@@ -121,28 +121,43 @@ export default function edit({ attributes, setAttributes }) {
 						/>
 					</div>
 					<div className="tileOneModalGoogleMap">
-					<PlainText
+						<PlainText
 							className="tileOneModalGoogleMap"
 							value={attributes.tileOneModalGoogleMap}
 							onChange={(tileOneModalGoogleMap) => setAttributes({ tileOneModalGoogleMap })}
 							placeholder="google map embed Iframe"
 						/>
 					</div>
-					
+
 				</div>
 				<div className='tileTwo'>
-				<div className="tileTwoIcon">
-					<PlainText
+					<div className="tileTwoIcon">
+						<PlainText
 							className="tileTwoIcon"
 							value={attributes.tileTwoIcon}
 							onChange={(tileTwoIcon) => setAttributes({ tileTwoIcon })}
 							placeholder="FA Icon"
 						/>
 					</div>
+					<div className="tileTwoModalTitle">
+						<PlainText
+							className="tileTwoModalTitle"
+							value={attributes.tileTwoModalTitle}
+							onChange={(tileTwoModalTitle) => setAttributes({ tileTwoModalTitle })}
+							placeholder="Modal 2 title"
+						/>
+						<RichText
+							tagName="ul"
+							value={attributes.tileTwoModalList}
+							allowedFormats={['core/bold', 'core/italic', 'core/html']}
+							onChange={(tileTwoModalList) => setAttributes({ tileTwoModalList })}
+							placeholder={__('heading...')}
+						/>
+					</div>
 				</div>
 				<div className='tileThree'>
-				<div className="tileThreeIcon">
-					<PlainText
+					<div className="tileThreeIcon">
+						<PlainText
 							className="tileThreeIcon"
 							value={attributes.tileThreeIcon}
 							onChange={(tileThreeIcon) => setAttributes({ tileThreeIcon })}
@@ -151,8 +166,8 @@ export default function edit({ attributes, setAttributes }) {
 					</div>
 				</div>
 				<div className='tileFour'>
-				<div className="tileFourIcon">
-					<PlainText
+					<div className="tileFourIcon">
+						<PlainText
 							className="tileFourIcon"
 							value={attributes.tileFourIcon}
 							onChange={(tileFourIcon) => setAttributes({ tileFourIcon })}
