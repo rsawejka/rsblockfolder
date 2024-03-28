@@ -1642,7 +1642,25 @@ function edit({
     onChange: tileOneModalTitle => setAttributes({
       tileOneModalTitle
     }),
-    placeholder: "FA Icon"
+    placeholder: "Modal 1 Tittle"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalDates"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalDates",
+    value: attributes.tileOneModalDates,
+    onChange: tileOneModalDates => setAttributes({
+      tileOneModalDates
+    }),
+    placeholder: "Modal One Date "
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalWho"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalWho",
+    value: attributes.tileOneModalWho,
+    onChange: tileOneModalWho => setAttributes({
+      tileOneModalWho
+    }),
+    placeholder: "Modal One Date "
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileTwo"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1772,6 +1790,14 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       default: 'Modal 1 Title'
     },
+    tileOneModalDates: {
+      type: 'string',
+      default: 'Modal One Dates'
+    },
+    tileOneModalWho: {
+      type: 'string',
+      default: 'Who'
+    },
     tileTwoIcon: {
       type: 'string',
       default: 'fa-solid fa-paw'
@@ -1899,7 +1925,7 @@ function save({
     "aria-hidden": "true"
   }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-body"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "When is it?")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "When is it? ", attributes.tileOneModalDates), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "Who should I bring? ", attributes.tileOneModalWho)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-footer"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",

@@ -69,7 +69,23 @@ export default function edit({ attributes, setAttributes }) {
 							className="tileOneModalTitle"
 							value={attributes.tileOneModalTitle}
 							onChange={(tileOneModalTitle) => setAttributes({ tileOneModalTitle })}
-							placeholder="FA Icon"
+							placeholder="Modal 1 Tittle"
+						/>
+					</div>
+					<div className="tileOneModalDates">
+					<PlainText
+							className="tileOneModalDates"
+							value={attributes.tileOneModalDates}
+							onChange={(tileOneModalDates) => setAttributes({ tileOneModalDates })}
+							placeholder="Modal One Date "
+						/>
+					</div>
+					<div className="tileOneModalWho">
+					<PlainText
+							className="tileOneModalWho"
+							value={attributes.tileOneModalWho}
+							onChange={(tileOneModalWho) => setAttributes({ tileOneModalWho })}
+							placeholder="Modal One Date "
 						/>
 					</div>
 					

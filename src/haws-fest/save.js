@@ -59,7 +59,8 @@ export default function save({ attributes }) {
 									</button>
 								</div>
 								<div class="modal-body">
-									<h6>When is it?</h6>
+									<h6>When is it? {attributes.tileOneModalDates}</h6>
+									<h6>Who should I bring? {attributes.tileOneModalWho}</h6>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -88,6 +88,14 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 			type: 'string',
 			default: 'Modal 1 Title',
 		},
+		tileOneModalDates: {
+			type: 'string',
+			default: 'Modal One Dates',
+		},
+		tileOneModalWho: {
+			type: 'string',
+			default: 'Who',
+		},
 		
 		tileTwoIcon: {
 			type: 'string',
