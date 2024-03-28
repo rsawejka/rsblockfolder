@@ -59,12 +59,16 @@ export default function save({ attributes }) {
 									</button>
 								</div>
 								<div class="modal-body">
-									<h6>When is it? {attributes.tileOneModalDates}</h6>
-									<h6>Who should I bring? {attributes.tileOneModalWho}</h6>
+									<h6><b>When is it?</b> </h6><span> {attributes.tileOneModalDates}</span>
+									<h6 id='whoToBring'><b>Who should I bring?</b> </h6><span>{attributes.tileOneModalWho}</span>
+									<h6 id='whereIsIt'><b>Where is it?</b> </h6><span>{attributes.tileOneModalWhere}</span>
+									<div>{attributes.tileOneModalAdress}</div>
+									<div>{attributes.tileOneModalDetails}</div>
+									<div>{attributes.tileOneModalDetailsTwo}</div>
+									<div><iframe src={attributes.tileOneModalGoogleMap} width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
 								</div>
 							</div>
 						</div>
@@ -97,7 +101,6 @@ export default function save({ attributes }) {
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
 								</div>
 							</div>
 						</div>
@@ -130,7 +133,6 @@ export default function save({ attributes }) {
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
 								</div>
 							</div>
 						</div>
@@ -163,7 +165,6 @@ export default function save({ attributes }) {
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
 								</div>
 							</div>
 						</div>

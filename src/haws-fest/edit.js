@@ -88,6 +88,46 @@ export default function edit({ attributes, setAttributes }) {
 							placeholder="Modal One Date "
 						/>
 					</div>
+					<div className="tileOneModalWhere">
+					<PlainText
+							className="tileOneModalWhere"
+							value={attributes.tileOneModalWhere}
+							onChange={(tileOneModalWhere) => setAttributes({ tileOneModalWhere })}
+							placeholder="Modal One Where "
+						/>
+					</div>
+					<div className="tileOneModalAdress">
+					<PlainText
+							className="tileOneModalAdress"
+							value={attributes.tileOneModalAdress}
+							onChange={(tileOneModalAdress) => setAttributes({ tileOneModalAdress })}
+							placeholder="Address "
+						/>
+					</div>
+					<div className="tileOneModalDetails">
+					<PlainText
+							className="tileOneModalDetails"
+							value={attributes.tileOneModalDetails}
+							onChange={(tileOneModalDetails) => setAttributes({ tileOneModalDetails })}
+							placeholder="details "
+						/>
+					</div>
+					<div className="tileOneModalDetailsTwo">
+					<PlainText
+							className="tileOneModalDetailsTwo"
+							value={attributes.tileOneModalDetailsTwo}
+							onChange={(tileOneModalDetailsTwo) => setAttributes({ tileOneModalDetailsTwo })}
+							placeholder="details 2 "
+						/>
+					</div>
+					<div className="tileOneModalGoogleMap">
+					<PlainText
+							className="tileOneModalGoogleMap"
+							value={attributes.tileOneModalGoogleMap}
+							onChange={(tileOneModalGoogleMap) => setAttributes({ tileOneModalGoogleMap })}
+							placeholder="google map embed Iframe"
+						/>
+					</div>
 					
 				</div>
 				<div className='tileTwo'>

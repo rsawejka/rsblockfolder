@@ -96,6 +96,26 @@ registerBlockType( 'rs-blockfolder/haws-fest', {
 			type: 'string',
 			default: 'Who',
 		},
+		tileOneModalWhere: {
+			type: 'string',
+			default: 'Where',
+		},
+		tileOneModalAdress: {
+			type: 'string',
+			default: 'Where',
+		},		
+		tileOneModalDetails: {
+			type: 'string',
+			default: 'Details',
+		},
+		tileOneModalDetailsTwo: {
+			type: 'string',
+			default: 'Details',
+		},
+		tileOneModalGoogleMap: {
+			type: 'string',
+			default: 'google map iframe',
+		},
 		
 		tileTwoIcon: {
 			type: 'string',

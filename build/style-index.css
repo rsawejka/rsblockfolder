@@ -125,6 +125,12 @@
 .wp-block-rs-blockfolder-haws-fest #tileThreeModal {
   width: 100%;
 }
+.wp-block-rs-blockfolder-haws-fest #whoToBring {
+  margin-top: 10px;
+}
+.wp-block-rs-blockfolder-haws-fest #whereIsIt {
+  margin-top: 10px;
+}
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/haws-events/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************/

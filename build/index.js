@@ -1661,6 +1661,51 @@ function edit({
       tileOneModalWho
     }),
     placeholder: "Modal One Date "
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalWhere"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalWhere",
+    value: attributes.tileOneModalWhere,
+    onChange: tileOneModalWhere => setAttributes({
+      tileOneModalWhere
+    }),
+    placeholder: "Modal One Where "
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalAdress"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalAdress",
+    value: attributes.tileOneModalAdress,
+    onChange: tileOneModalAdress => setAttributes({
+      tileOneModalAdress
+    }),
+    placeholder: "Address "
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalDetails"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalDetails",
+    value: attributes.tileOneModalDetails,
+    onChange: tileOneModalDetails => setAttributes({
+      tileOneModalDetails
+    }),
+    placeholder: "details "
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalDetailsTwo"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalDetailsTwo",
+    value: attributes.tileOneModalDetailsTwo,
+    onChange: tileOneModalDetailsTwo => setAttributes({
+      tileOneModalDetailsTwo
+    }),
+    placeholder: "details 2 "
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileOneModalGoogleMap"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileOneModalGoogleMap",
+    value: attributes.tileOneModalGoogleMap,
+    onChange: tileOneModalGoogleMap => setAttributes({
+      tileOneModalGoogleMap
+    }),
+    placeholder: "google map embed Iframe"
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileTwo"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1798,6 +1843,26 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       default: 'Who'
     },
+    tileOneModalWhere: {
+      type: 'string',
+      default: 'Where'
+    },
+    tileOneModalAdress: {
+      type: 'string',
+      default: 'Where'
+    },
+    tileOneModalDetails: {
+      type: 'string',
+      default: 'Details'
+    },
+    tileOneModalDetailsTwo: {
+      type: 'string',
+      default: 'Details'
+    },
+    tileOneModalGoogleMap: {
+      type: 'string',
+      default: 'google map iframe'
+    },
     tileTwoIcon: {
       type: 'string',
       default: 'fa-solid fa-paw'
@@ -1925,16 +1990,25 @@ function save({
     "aria-hidden": "true"
   }, "\xD7"))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-body"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "When is it? ", attributes.tileOneModalDates), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, "Who should I bring? ", attributes.tileOneModalWho)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "When is it?"), " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, " ", attributes.tileOneModalDates), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
+    id: "whoToBring"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "Who should I bring?"), " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, attributes.tileOneModalWho), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h6", {
+    id: "whereIsIt"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("b", null, "Where is it?"), " "), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, attributes.tileOneModalWhere), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, attributes.tileOneModalAdress), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, attributes.tileOneModalDetails), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, attributes.tileOneModalDetailsTwo), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("iframe", {
+    src: attributes.tileOneModalGoogleMap,
+    width: "600",
+    height: "450",
+    style: "border:0;",
+    allowfullscreen: "",
+    loading: "lazy",
+    referrerpolicy: "no-referrer-when-downgrade"
+  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "modal-footer"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     type: "button",
     class: "btn btn-secondary",
     "data-dismiss": "modal"
-  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    type: "button",
-    class: "btn btn-primary"
-  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillTwo ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, "Close")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillTwo ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     "data-toggle": "modal",
     "data-target": "#tileTwoModal"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1975,10 +2049,7 @@ function save({
     type: "button",
     class: "btn btn-secondary",
     "data-dismiss": "modal"
-  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    type: "button",
-    class: "btn btn-primary"
-  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillThree ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, "Close")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillThree ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     "data-toggle": "modal",
     "data-target": "#tileThreeModal"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -2019,10 +2090,7 @@ function save({
     type: "button",
     class: "btn btn-secondary",
     "data-dismiss": "modal"
-  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    type: "button",
-    class: "btn btn-primary"
-  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillFour ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, "Close")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillFour ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     "data-toggle": "modal",
     "data-target": "#tileFourModal"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -2063,10 +2131,7 @@ function save({
     type: "button",
     class: "btn btn-secondary",
     "data-dismiss": "modal"
-  }, "Close"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    type: "button",
-    class: "btn btn-primary"
-  }, "Save changes")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null));
+  }, "Close")))))) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null));
 }
 
 /***/ }),
