@@ -1,3 +1,4 @@
+
 /**
  * The following styles get applied both on the front of your site
  * and in the editor.
@@ -13,10 +14,6 @@ $imgBrightness:  brightness(40%);
 	margin: 0!important;
 	padding: 0!important;
 
-	.tile{
-		border-radius: 1000px;
-		margin: 30px;
-	}
 	.tile a{
 		color: white;
 		text-decoration: none;
@@ -28,8 +25,14 @@ $imgBrightness:  brightness(40%);
 		transition: .5s;
 		
 	}
-	
-
+	.title{
+		width: 300px;
+		text-wrap: wrap;
+		text-align: center;
+	}
+	.rs-block-description{
+		margin-top: 20px;
+	}
 // .tileTitle{
 // 	height: 300px;
 	
@@ -53,7 +56,7 @@ $imgBrightness:  brightness(40%);
 // }
 
 .flipCard {
-	width: 300px;
+	width: 600px;
 	height: 300px;
 	
   }
@@ -79,11 +82,12 @@ $imgBrightness:  brightness(40%);
 	background-color: #D3D3D3;
 	color: black;
 	transform: rotateY(180deg);
-	margin-top: 30px;
-	margin-right: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
   }
   .backCardHeader{
 	text-align: center;
 	margin-top: 20px;
+
   }
 }

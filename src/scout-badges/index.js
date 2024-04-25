@@ -94,6 +94,11 @@ registerBlockType( 'rs-blockfolder/scout-badges', {
 			source: 'html',
 			selector: '.tileOneList',
 		},
+		tileOneDescription: {
+			type: 'string',
+			source: 'text',
+			selector: '.tileOneDescription',
+		},
 		tileOneUrl: {
 			type: 'string',
 			default: '#',
@@ -106,6 +111,16 @@ registerBlockType( 'rs-blockfolder/scout-badges', {
 			type: 'string',
 			source: 'text',
 			selector: '.tileTwoTitle',
+		},
+		tileTwoList: {
+			type: 'string',
+			source: 'html',
+			selector: '.tileTwoList',
+		},
+		tileTwoDescription: {
+			type: 'string',
+			source: 'text',
+			selector: '.tileTwoDescription',
 		},
 		tileTwoUrl: {
 			type: 'string',
@@ -120,6 +135,16 @@ registerBlockType( 'rs-blockfolder/scout-badges', {
 			source: 'text',
 			selector: '.tileThreeTitle',
 		},
+		tileThreeList: {
+			type: 'string',
+			source: 'html',
+			selector: '.tileThreeList',
+		},
+		tileThreeDescription: {
+			type: 'string',
+			source: 'text',
+			selector: '.tileThreeDescription',
+		},
 		tileThreeUrl: {
 			type: 'string',
 			default: '#',
@@ -133,62 +158,21 @@ registerBlockType( 'rs-blockfolder/scout-badges', {
 			source: 'text',
 			selector: '.tileFourTitle',
 		},
+		tileFourList: {
+			type: 'string',
+			source: 'html',
+			selector: '.tileFourList',
+		},
+		tileFourDescription: {
+			type: 'string',
+			source: 'text',
+			selector: '.tileFourDescription',
+		},
 		tileFourUrl: {
 			type: 'string',
 			default: '#',
 		},
-		tileFiveImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileFiveTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileFiveTitle',
-		},
-		tileFiveUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileSixImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileSixTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileSixTitle',
-		},
-		tileSixUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileSevenImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileSevenTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileSevenTitle',
-		},
-		tileSevenUrl: {
-			type: 'string',
-			default: '#',
-		},
-		tileEightImgUrl: {
-			type: 'string',
-			default: 'https://placehold.it/75',
-		},
-		tileEightTitle: {
-			type: 'string',
-			source: 'text',
-			selector: '.tileEightTitle',
-		},
-		tileEightUrl: {
-			type: 'string',
-			default: '#',
-		},
+		
 	},
 
 	/**

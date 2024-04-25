@@ -28,6 +28,8 @@ import { RawHTML } from '@wordpress/element';
 export default function save({ attributes }) {
 	const isFillOne = attributes.tileOneTitle;
 	const isFillTwo = attributes.tileTwoTitle;
+	const isFillThree = attributes.tileThreeTitle;
+	const isFillFour = attributes.tileFourTitle;
 
 
 	const imgHeight = '300px';
@@ -35,7 +37,7 @@ export default function save({ attributes }) {
 	const backgroundSize = 'contain';
 	const borderRadius = "0px";
 	const divStyles = {
-		color: 'blue',
+		color: '#88cd00',
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
@@ -44,6 +46,33 @@ export default function save({ attributes }) {
 	const tileOneBackgroundImage = {
 
 		backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
+		height: imgHeight,
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: backgroundSize,
+		borderRadius: borderRadius,
+		width: imgWidth,
+	}
+	const tileTwoBackgroundImage = {
+
+		backgroundImage: "url(" + attributes.tileTwoImgUrl + ")",
+		height: imgHeight,
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: backgroundSize,
+		borderRadius: borderRadius,
+		width: imgWidth,
+	}
+	const tileThreeBackgroundImage = {
+
+		backgroundImage: "url(" + attributes.tileThreeImgUrl + ")",
+		height: imgHeight,
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: backgroundSize,
+		borderRadius: borderRadius,
+		width: imgWidth,
+	}
+	const tileFourBackgroundImage = {
+
+		backgroundImage: "url(" + attributes.tileFourImgUrl + ")",
 		height: imgHeight,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: backgroundSize,
@@ -70,9 +99,9 @@ export default function save({ attributes }) {
 			{isFillOne ? (
 				<div>
 					<div className="tileTitle" style={titleBorder}>
-						<div className='title tileOneTitle'>
+						<h4 className='title tileOneTitle'>
 							{attributes.tileOneTitle}
-						</div>
+						</h4>
 					</div>
 					<div className="flipCard">
 						<div className="flipCardInner">
@@ -87,7 +116,13 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<div>ashjdfk</div>
+								<h6 className='backCardHeader'>{attributes.tileOneTitle}</h6>
+								<div className='tileOneList'>
+									<RawHTML>
+									{attributes.tileOneList}
+									</RawHTML>
+									</div>
+								<div className='rs-block-description tileOneDescription'>{attributes.tileOneDescription}</div>
 							</div>
 						</div>
 					</div>
@@ -98,9 +133,9 @@ export default function save({ attributes }) {
 			{isFillTwo ? (
 				<div>
 					<div className="tileTitle" style={titleBorder}>
-						<div className='title tileTwoTitle'>
+						<h4 className='title tileTwoTitle'>
 							{attributes.tileTwoTitle}
-						</div>
+						</h4>
 					</div>
 					<div className="flipCard">
 						<div className="flipCardInner">
@@ -115,7 +150,13 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<div>ashjdfk</div>
+								<h6 className='backCardHeader'>{attributes.tileTwoTitle}</h6>
+								<div className='tileTwoList'>
+									<RawHTML>
+									{attributes.tileTwoList}
+									</RawHTML>
+									</div>
+								<div className='rs-block-description tileTwoDescription'>{attributes.tileTwoDescription}</div>
 							</div>
 						</div>
 					</div>
@@ -123,6 +164,75 @@ export default function save({ attributes }) {
 			) : (
 				<div></div>
 			)}
+			{isFillThree ? (
+				<div>
+					<div className="tileTitle" style={titleBorder}>
+						<h4 className='title tileThreeTitle'>
+							{attributes.tileThreeTitle}
+						</h4>
+					</div>
+					<div className="flipCard">
+						<div className="flipCardInner">
+							<div className="tile flipCardFront">
+
+								<div className="tileInner">
+									<a href={attributes.tileThreeUrl}>
+										<div className="tileImg" style={tileThreeBackgroundImage}>
+
+										</div>
+									</a>
+								</div>
+							</div>
+							<div className="flipCardBack">
+								<h6 className='backCardHeader'>{attributes.tileThreeTitle}</h6>
+								<div className='tileThreeList'>
+									<RawHTML>
+									{attributes.tileThreeList}
+									</RawHTML>
+									</div>
+								<div className='rs-block-description tileThreeDescription'>{attributes.tileThreeDescription}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			) : (
+				<div></div>
+			)}
+			{isFillFour ? (
+				<div>
+					<div className="tileTitle" style={titleBorder}>
+						<h4 className='title tileFourTitle'>
+							{attributes.tileFourTitle}
+						</h4>
+					</div>
+					<div className="flipCard">
+						<div className="flipCardInner">
+							<div className="tile flipCardFront">
+
+								<div className="tileInner">
+									<a href={attributes.tileFourUrl}>
+										<div className="tileImg" style={tileFourBackgroundImage}>
+
+										</div>
+									</a>
+								</div>
+							</div>
+							<div className="flipCardBack">
+								<h6 className='backCardHeader'>{attributes.tileFourTitle}</h6>
+								<div className='tileFourList'>
+									<RawHTML>
+									{attributes.tileFourList}
+									</RawHTML>
+									</div>
+								<div className='rs-block-description tileFourDescription'>{attributes.tileFourDescription}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			) : (
+				<div></div>
+			)}
+			
 		</div>
 	);
 }

@@ -84,6 +84,14 @@ export default function edit({ attributes, setAttributes }) {
 					</div>
 					<div>
 						<PlainText
+							className="tileOneDescription"
+							value={attributes.tileOneDescription}
+							onChange={(tileOneDescription) => setAttributes({ tileOneDescription })}
+							placeholder="Description"
+						/>
+					</div>
+					<div>
+						<PlainText
 							className="tileOneUrl"
 							value={attributes.tileOneUrl}
 							onChange={(tileOneUrl) => setAttributes({ tileOneUrl })}
@@ -99,19 +107,35 @@ export default function edit({ attributes, setAttributes }) {
 							<MediaUpload
 								allowedTypes={['image']}
 								onSelect={(tileTwoImg) => setAttributes({ tileTwoImgUrl: tileTwoImg.sizes.thumbnail.url })}
-								render={({ open }) => <img src={attributes.tileTwoImgUrl} onClick={open} />}
-							/>
+								render={({ open }) => <img src={attributes.tileTwoImgUrl} onClick={open} />}								
+							/>							
 						</MediaUploadCheck>
 					</div>
-					<div className="tileTwoTitleBlock">
+					<div>
 						<PlainText
 							className="tileTwoTitle"
 							value={attributes.tileTwoTitle}
 							onChange={(tileTwoTitle) => setAttributes({ tileTwoTitle })}
 							placeholder="Title"
 						/>
-
-
+					</div>
+					<div>
+						<RichText
+							tagName="ul"
+							multiline="li"
+							value={attributes.tileTwoList}
+							allowedFormats={['core/bold', 'core/italic', 'core/html']}
+							onChange={(tileTwoList) => setAttributes({ tileTwoList })}
+							placeholder={__('tile 1 list')}
+						/>
+					</div>
+					<div>
+						<PlainText
+							className="tileTwoDescription"
+							value={attributes.tileTwoDescription}
+							onChange={(tileTwoDescription) => setAttributes({ tileTwoDescription })}
+							placeholder="Description"
+						/>
 					</div>
 					<div>
 						<PlainText
@@ -129,20 +153,36 @@ export default function edit({ attributes, setAttributes }) {
 						<MediaUploadCheck>
 							<MediaUpload
 								allowedTypes={['image']}
-								onSelect={(tileThreeImg) => setAttributes({ tileThreeImgUrl: tileThreeImg.sizes.large.url })}
-								render={({ open }) => <img src={attributes.tileThreeImgUrl} onClick={open} />}
-							/>
+								onSelect={(tileThreeImg) => setAttributes({ tileThreeImgUrl: tileThreeImg.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileThreeImgUrl} onClick={open} />}								
+							/>							
 						</MediaUploadCheck>
 					</div>
-					<div className="tileThreeTitleBlock">
+					<div>
 						<PlainText
 							className="tileThreeTitle"
 							value={attributes.tileThreeTitle}
 							onChange={(tileThreeTitle) => setAttributes({ tileThreeTitle })}
 							placeholder="Title"
 						/>
-
-
+					</div>
+					<div>
+						<RichText
+							tagName="ul"
+							multiline="li"
+							value={attributes.tileThreeList}
+							allowedFormats={['core/bold', 'core/italic', 'core/html']}
+							onChange={(tileThreeList) => setAttributes({ tileThreeList })}
+							placeholder={__('tile 1 list')}
+						/>
+					</div>
+					<div>
+						<PlainText
+							className="tileThreeDescription"
+							value={attributes.tileThreeDescription}
+							onChange={(tileThreeDescription) => setAttributes({ tileThreeDescription })}
+							placeholder="Description"
+						/>
 					</div>
 					<div>
 						<PlainText
@@ -160,20 +200,36 @@ export default function edit({ attributes, setAttributes }) {
 						<MediaUploadCheck>
 							<MediaUpload
 								allowedTypes={['image']}
-								onSelect={(tileFourImg) => setAttributes({ tileFourImgUrl: tileFourImg.sizes.large.url })}
-								render={({ open }) => <img src={attributes.tileFourImgUrl} onClick={open} />}
-							/>
+								onSelect={(tileFourImg) => setAttributes({ tileFourImgUrl: tileFourImg.sizes.thumbnail.url })}
+								render={({ open }) => <img src={attributes.tileFourImgUrl} onClick={open} />}								
+							/>							
 						</MediaUploadCheck>
 					</div>
-					<div className="tileFourTitleBlock">
+					<div>
 						<PlainText
 							className="tileFourTitle"
 							value={attributes.tileFourTitle}
 							onChange={(tileFourTitle) => setAttributes({ tileFourTitle })}
 							placeholder="Title"
 						/>
-
-
+					</div>
+					<div>
+						<RichText
+							tagName="ul"
+							multiline="li"
+							value={attributes.tileFourList}
+							allowedFormats={['core/bold', 'core/italic', 'core/html']}
+							onChange={(tileFourList) => setAttributes({ tileFourList })}
+							placeholder={__('tile 1 list')}
+						/>
+					</div>
+					<div>
+						<PlainText
+							className="tileFourDescription"
+							value={attributes.tileFourDescription}
+							onChange={(tileFourDescription) => setAttributes({ tileFourDescription })}
+							placeholder="Description"
+						/>
 					</div>
 					<div>
 						<PlainText
@@ -182,134 +238,9 @@ export default function edit({ attributes, setAttributes }) {
 							onChange={(tileFourUrl) => setAttributes({ tileFourUrl })}
 							placeholder="URL MUST INCLUDE HTTPS://"
 						/>
-
-
 					</div>
 				</div>
-				<div className='tileFive'>
-					<div className="tileFivePhoto">
-						<MediaUploadCheck>
-							<MediaUpload
-								allowedTypes={['image']}
-								onSelect={(tileFiveImg) => setAttributes({ tileFiveImgUrl: tileFiveImg.sizes.large.url })}
-								render={({ open }) => <img src={attributes.tileFiveImgUrl} onClick={open} />}
-							/>
-						</MediaUploadCheck>
-					</div>
-					<div className="tileFiveTitleBlock">
-						<PlainText
-							className="tileFiveTitle"
-							value={attributes.tileFiveTitle}
-							onChange={(tileFiveTitle) => setAttributes({ tileFiveTitle })}
-							placeholder="Title"
-						/>
 
-
-					</div>
-					<div>
-						<PlainText
-							className="tileFiveUrl"
-							value={attributes.tileFiveUrl}
-							onChange={(tileFiveUrl) => setAttributes({ tileFiveUrl })}
-							placeholder="URL MUST INCLUDE HTTPS://"
-						/>
-
-
-					</div>
-				</div>
-				<div className='tileSix'>
-					<div className="tileSixPhoto">
-						<MediaUploadCheck>
-							<MediaUpload
-								allowedTypes={['image']}
-								onSelect={(tileSixImg) => setAttributes({ tileSixImgUrl: tileSixImg.sizes.large.url })}
-								render={({ open }) => <img src={attributes.tileSixImgUrl} onClick={open} />}
-							/>
-						</MediaUploadCheck>
-					</div>
-					<div className="tileSixTitleBlock">
-						<PlainText
-							className="tileSixTitle"
-							value={attributes.tileSixTitle}
-							onChange={(tileSixTitle) => setAttributes({ tileSixTitle })}
-							placeholder="Title"
-						/>
-
-
-					</div>
-					<div>
-						<PlainText
-							className="tileSixUrl"
-							value={attributes.tileSixUrl}
-							onChange={(tileSixUrl) => setAttributes({ tileSixUrl })}
-							placeholder="URL MUST INCLUDE HTTPS://"
-						/>
-
-
-					</div>
-				</div>
-				<div className='tileSeven'>
-					<div className="tileSevenPhoto">
-						<MediaUploadCheck>
-							<MediaUpload
-								allowedTypes={['image']}
-								onSelect={(tileSevenImg) => setAttributes({ tileSevenImgUrl: tileSevenImg.sizes.large.url })}
-								render={({ open }) => <img src={attributes.tileSevenImgUrl} onClick={open} />}
-							/>
-						</MediaUploadCheck>
-					</div>
-					<div className="tileSevenTitleBlock">
-						<PlainText
-							className="tileSevenTitle"
-							value={attributes.tileSevenTitle}
-							onChange={(tileSevenTitle) => setAttributes({ tileSevenTitle })}
-							placeholder="Title"
-						/>
-
-
-					</div>
-					<div>
-						<PlainText
-							className="tileSevenUrl"
-							value={attributes.tileSevenUrl}
-							onChange={(tileSevenUrl) => setAttributes({ tileSevenUrl })}
-							placeholder="URL MUST INCLUDE HTTPS://"
-						/>
-
-
-					</div>
-				</div>
-				<div className='tileEight'>
-					<div className="tileEightPhoto">
-						<MediaUploadCheck>
-							<MediaUpload
-								allowedTypes={['image']}
-								onSelect={(tileEightImg) => setAttributes({ tileEightImgUrl: tileEightImg.sizes.large.url })}
-								render={({ open }) => <img src={attributes.tileEightImgUrl} onClick={open} />}
-							/>
-						</MediaUploadCheck>
-					</div>
-					<div className="tileEightTitleBlock">
-						<PlainText
-							className="tileEightTitle"
-							value={attributes.tileEightTitle}
-							onChange={(tileEightTitle) => setAttributes({ tileEightTitle })}
-							placeholder="Title"
-						/>
-
-
-					</div>
-					<div>
-						<PlainText
-							className="tileEightUrl"
-							value={attributes.tileEightUrl}
-							onChange={(tileEightUrl) => setAttributes({ tileEightUrl })}
-							placeholder="URL MUST INCLUDE HTTPS://"
-						/>
-
-
-					</div>
-				</div>
 			</div>
 		</div>
 	);
