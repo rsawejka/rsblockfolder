@@ -76,8 +76,14 @@ $imgBrightness:  brightness(40%);
   }
   
   .flipCardBack {
-	background-color: #2980b9;
-	color: white;
+	background-color: #D3D3D3;
+	color: black;
 	transform: rotateY(180deg);
+	margin-top: 30px;
+	margin-right: 200px;
+  }
+  .backCardHeader{
+	text-align: center;
+	margin-top: 20px;
   }
 }

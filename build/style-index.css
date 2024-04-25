@@ -404,9 +404,15 @@
   backface-visibility: hidden;
 }
 .wp-block-rs-blockfolder-scout-badges .flipCardBack {
-  background-color: #2980b9;
-  color: white;
+  background-color: #D3D3D3;
+  color: black;
   transform: rotateY(180deg);
+  margin-top: 30px;
+  margin-right: 200px;
+}
+.wp-block-rs-blockfolder-scout-badges .backCardHeader {
+  text-align: center;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

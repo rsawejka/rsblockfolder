@@ -50,15 +50,15 @@ export default function save({ attributes }) {
 		borderRadius: borderRadius,
 		width: imgWidth,
 	}
-	const tileTwoBackgroundImage = {
+	// const tileTwoBackgroundImage = {
 
-		backgroundImage: "url(" + attributes.tileTwoImgUrl + ")",
-		height: imgHeight,
-		backgroundRepeat: 'no-repeat',
-		backgroundSize: backgroundSize,
-		borderRadius: borderRadius,
-		width: imgWidth,
-	}
+	// 	backgroundImage: "url(" + attributes.tileTwoImgUrl + ")",
+	// 	height: imgHeight,
+	// 	backgroundRepeat: 'no-repeat',
+	// 	backgroundSize: backgroundSize,
+	// 	borderRadius: borderRadius,
+	// 	width: imgWidth,
+	// }
 
 
 	const titleBorder = {
@@ -87,34 +87,7 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<div>ashjdfk</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			) : (
-				<div></div>
-			)}
-			{isFillTwo ? (
-				<div>
-					<div className="tileTitle" style={titleBorder}>
-						<div className='title tileTwoTitle'>
-							{attributes.tileTwoTitle}
-						</div>
-					</div>
-					<div className="flipCard">
-						<div className="flipCardInner">
-							<div className="tile flipCardFront">
-
-								<div className="tileInner">
-									<a href={attributes.tileTwoUrl}>
-										<div className="tileImg" style={tileTwoBackgroundImage}>
-
-										</div>
-									</a>
-								</div>
-							</div>
-							<div className="flipCardBack">
+								<h2 className='backCardHeader'>{attributes.tileOneTitle}</h2>
 								<div>ashjdfk</div>
 							</div>
 						</div>
