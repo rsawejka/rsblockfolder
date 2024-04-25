@@ -2264,6 +2264,10 @@ function save({
     flexWrap: 'wrap',
     justifyContent: 'center'
   };
+  const iconTitle = {
+    textAlign: 'center',
+    marginBotton: '17px'
+  };
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "haws-fest",
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
@@ -2274,7 +2278,10 @@ function save({
     "data-target": "#tileOneModal"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tile"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    style: iconTitle,
+    className: "iconTitle"
+  }, attributes.tileOneModalTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileInner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
     className: attributes.tileOneIcon
@@ -2327,7 +2334,10 @@ function save({
     "data-target": "#tileTwoModal"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tile"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    style: iconTitle,
+    className: "iconTitle"
+  }, attributes.tileTwoModalTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileInner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
     className: attributes.tileTwoIcon
@@ -2370,7 +2380,10 @@ function save({
     "data-target": "#tileThreeModal"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tile"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    style: iconTitle,
+    className: "iconTitle"
+  }, attributes.tileThreeModalTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileInner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
     className: attributes.tileThreeIcon
@@ -2450,7 +2463,10 @@ function save({
     "data-target": "#tileFourModal"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tile"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    style: iconTitle,
+    className: "iconTitle"
+  }, attributes.tileFourTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tileInner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("i", {
     className: attributes.tileFourIcon
@@ -3698,11 +3714,237 @@ function edit({
       tileOneTitle
     }),
     placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "ul",
+    multiline: "li",
+    value: attributes.tileOneList,
+    allowedFormats: ['core/bold', 'core/italic', 'core/html'],
+    onChange: tileOneList => setAttributes({
+      tileOneList
+    }),
+    placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('tile 1 list')
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
     className: "tileOneUrl",
     value: attributes.tileOneUrl,
     onChange: tileOneUrl => setAttributes({
       tileOneUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTwo"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTwoPhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileTwoImg => setAttributes({
+      tileTwoImgUrl: tileTwoImg.sizes.thumbnail.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileTwoImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTwoTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileTwoTitle",
+    value: attributes.tileTwoTitle,
+    onChange: tileTwoTitle => setAttributes({
+      tileTwoTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileTwoUrl",
+    value: attributes.tileTwoUrl,
+    onChange: tileTwoUrl => setAttributes({
+      tileTwoUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThree"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThreePhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileThreeImg => setAttributes({
+      tileThreeImgUrl: tileThreeImg.sizes.large.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileThreeImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileThreeTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileThreeTitle",
+    value: attributes.tileThreeTitle,
+    onChange: tileThreeTitle => setAttributes({
+      tileThreeTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileThreeUrl",
+    value: attributes.tileThreeUrl,
+    onChange: tileThreeUrl => setAttributes({
+      tileThreeUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFour"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourPhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileFourImg => setAttributes({
+      tileFourImgUrl: tileFourImg.sizes.large.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileFourImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFourTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourTitle",
+    value: attributes.tileFourTitle,
+    onChange: tileFourTitle => setAttributes({
+      tileFourTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFourUrl",
+    value: attributes.tileFourUrl,
+    onChange: tileFourUrl => setAttributes({
+      tileFourUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFive"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFivePhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileFiveImg => setAttributes({
+      tileFiveImgUrl: tileFiveImg.sizes.large.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileFiveImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileFiveTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFiveTitle",
+    value: attributes.tileFiveTitle,
+    onChange: tileFiveTitle => setAttributes({
+      tileFiveTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileFiveUrl",
+    value: attributes.tileFiveUrl,
+    onChange: tileFiveUrl => setAttributes({
+      tileFiveUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileSix"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileSixPhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileSixImg => setAttributes({
+      tileSixImgUrl: tileSixImg.sizes.large.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileSixImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileSixTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileSixTitle",
+    value: attributes.tileSixTitle,
+    onChange: tileSixTitle => setAttributes({
+      tileSixTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileSixUrl",
+    value: attributes.tileSixUrl,
+    onChange: tileSixUrl => setAttributes({
+      tileSixUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileSeven"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileSevenPhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileSevenImg => setAttributes({
+      tileSevenImgUrl: tileSevenImg.sizes.large.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileSevenImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileSevenTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileSevenTitle",
+    value: attributes.tileSevenTitle,
+    onChange: tileSevenTitle => setAttributes({
+      tileSevenTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileSevenUrl",
+    value: attributes.tileSevenUrl,
+    onChange: tileSevenUrl => setAttributes({
+      tileSevenUrl
+    }),
+    placeholder: "URL MUST INCLUDE HTTPS://"
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileEight"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileEightPhoto"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    allowedTypes: ['image'],
+    onSelect: tileEightImg => setAttributes({
+      tileEightImgUrl: tileEightImg.sizes.large.url
+    }),
+    render: ({
+      open
+    }) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: attributes.tileEightImgUrl,
+      onClick: open
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileEightTitleBlock"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileEightTitle",
+    value: attributes.tileEightTitle,
+    onChange: tileEightTitle => setAttributes({
+      tileEightTitle
+    }),
+    placeholder: "Title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PlainText, {
+    className: "tileEightUrl",
+    value: attributes.tileEightUrl,
+    onChange: tileEightUrl => setAttributes({
+      tileEightUrl
     }),
     placeholder: "URL MUST INCLUDE HTTPS://"
   })))));
@@ -3801,6 +4043,11 @@ __webpack_require__.r(__webpack_exports__);
       type: 'string',
       source: 'text',
       selector: '.tileOneTitle'
+    },
+    tileOneList: {
+      type: 'string',
+      source: 'html',
+      selector: '.tileOneList'
     },
     tileOneUrl: {
       type: 'string',
@@ -4021,9 +4268,27 @@ function save({
     style: tileOneBackgroundImage
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "flipCardBack"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "backCardHeader"
-  }, attributes.tileOneTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "ashjdfk"))))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "ashjdfk"))))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null), isFillTwo ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileTitle",
+    style: titleBorder
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "title tileTwoTitle"
+  }, attributes.tileTwoTitle)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flipCard"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flipCardInner"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tile flipCardFront"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileInner"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: attributes.tileTwoUrl
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "tileImg",
+    style: tileTwoBackgroundImage
+  })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "flipCardBack"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "ashjdfk"))))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null));
 }
 
 /***/ }),

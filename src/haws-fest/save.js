@@ -37,6 +37,10 @@ export default function save({ attributes }) {
 		flexWrap: 'wrap',
 		justifyContent: 'center',
 	}
+	const iconTitle = {
+		textAlign: 'center',
+		marginBotton: '17px',
+	}
 	return (
 		<div className='haws-fest' {...useBlockProps.save({ style: divStyles })}>
 
@@ -44,6 +48,7 @@ export default function save({ attributes }) {
 				<div>
 					<div data-toggle="modal" data-target="#tileOneModal">
 						<div className="tile">
+							<h3 style={iconTitle} className='iconTitle'>{attributes.tileOneModalTitle}</h3>
 							<div className="tileInner">
 								<i className={attributes.tileOneIcon}></i>
 							</div>
@@ -82,6 +87,7 @@ export default function save({ attributes }) {
 				<div>
 					<div data-toggle="modal" data-target="#tileTwoModal">
 						<div className="tile">
+							<h3 style={iconTitle} className='iconTitle'>{attributes.tileTwoModalTitle}</h3>
 							<div className="tileInner">
 								<i className={attributes.tileTwoIcon}></i>
 							</div>
@@ -118,6 +124,7 @@ export default function save({ attributes }) {
 				<div>
 					<div data-toggle="modal" data-target="#tileThreeModal">
 						<div className="tile">
+							<h3 style={iconTitle} className='iconTitle'>{attributes.tileThreeModalTitle}</h3>
 							<div className="tileInner">
 								<i className={attributes.tileThreeIcon}></i>
 							</div>
@@ -141,9 +148,9 @@ export default function save({ attributes }) {
 										<div><b>Goal: $50</b></div>
 										<div className='prizePadding'>Prize: {attributes.tileThreeModalPrizeOne}</div>
 										<div className='prizeFlex'>
-										<img src={attributes.tileThreeModalPrizeOneUrl}></img>
-										<img src={attributes.tileThreeModalPrizeOneBUrl}></img>
-										<img src={attributes.tileThreeModalPrizeOneCUrl}></img>
+											<img src={attributes.tileThreeModalPrizeOneUrl}></img>
+											<img src={attributes.tileThreeModalPrizeOneBUrl}></img>
+											<img src={attributes.tileThreeModalPrizeOneCUrl}></img>
 										</div>
 									</div>
 									<div className='prizeSep'>
@@ -184,6 +191,7 @@ export default function save({ attributes }) {
 				<div>
 					<div data-toggle="modal" data-target="#tileFourModal">
 						<div className="tile">
+							<h3 style={iconTitle} className='iconTitle'>{attributes.tileFourTitle}</h3>
 							<div className="tileInner">
 								<i className={attributes.tileFourIcon}></i>
 							</div>
