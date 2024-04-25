@@ -89,6 +89,11 @@ registerBlockType( 'rs-blockfolder/scout-badges', {
 			source: 'text',
 			selector: '.tileOneTitle',
 		},
+		tileOneList: {
+			type: 'string',
+			source: 'html',
+			selector: '.tileOneList',
+		},
 		tileOneUrl: {
 			type: 'string',
 			default: '#',

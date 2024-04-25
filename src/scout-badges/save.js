@@ -13,7 +13,7 @@ import { __ } from '@wordpress/i18n';
  */
 import { useBlockProps } from '@wordpress/block-editor';
 
-
+import { RawHTML } from '@wordpress/element';
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
@@ -87,7 +87,11 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<div>ashjdfk</div>
+								<div className='tileOneList'>
+									<RawHTML>
+										{attributes.tileOneList}
+									</RawHTML>
+									</div>
 							</div>
 						</div>
 					</div>
