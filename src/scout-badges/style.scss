@@ -14,6 +14,8 @@ $imgBrightness:  brightness(40%);
 	margin: 0!important;
 	padding: 0!important;
 
+	
+
 	.tile a{
 		color: white;
 		text-decoration: none;
@@ -29,6 +31,8 @@ $imgBrightness:  brightness(40%);
 		width: 300px;
 		text-wrap: wrap;
 		text-align: center;
+		margin: 0 auto;
+
 	}
 	.rs-block-description{
 		margin-top: 20px;
@@ -56,8 +60,9 @@ $imgBrightness:  brightness(40%);
 // }
 
 .flipCard {
-	width: 600px;
+	width: 300px;
 	height: 300px;
+	margin: 0 auto;
 	
   }
   .flipCardInner {

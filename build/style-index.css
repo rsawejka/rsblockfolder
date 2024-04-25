@@ -384,13 +384,15 @@
   width: 300px;
   text-wrap: wrap;
   text-align: center;
+  margin: 0 auto;
 }
 .wp-block-rs-blockfolder-scout-badges .rs-block-description {
   margin-top: 20px;
 }
 .wp-block-rs-blockfolder-scout-badges .flipCard {
-  width: 600px;
+  width: 300px;
   height: 300px;
+  margin: 0 auto;
 }
 .wp-block-rs-blockfolder-scout-badges .flipCardInner {
   width: 100%;

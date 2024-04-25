@@ -41,7 +41,9 @@ export default function save({ attributes }) {
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
-		justifyContent: 'center',
+		justifyContent: 'space-between',
+		marginLeft: '70px',
+		marginRight: "70px",
 	}
 	const tileOneBackgroundImage = {
 
@@ -94,7 +96,7 @@ export default function save({ attributes }) {
 		borderRadius: '150px',
 	}
 	return (
-		<div className='servicePage' {...useBlockProps.save({ style: divStyles })}>
+		<div className='scoutBadges' {...useBlockProps.save({ style: divStyles })}>
 
 			{isFillOne ? (
 				<div>

@@ -4130,7 +4130,9 @@ function save({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'center'
+    justifyContent: 'space-between',
+    marginLeft: '70px',
+    marginRight: "70px"
   };
   const tileOneBackgroundImage = {
     backgroundImage: "url(" + attributes.tileOneImgUrl + ")",
@@ -4178,7 +4180,7 @@ function save({
     borderRadius: '150px'
   };
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "servicePage",
+    className: "scoutBadges",
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save({
       style: divStyles
     })
