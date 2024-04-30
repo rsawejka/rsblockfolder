@@ -386,6 +386,7 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 15px;
+  height: 58px;
 }
 .wp-block-rs-blockfolder-scout-badges .rs-block-description {
   margin: 15px;
@@ -416,7 +417,7 @@
 .wp-block-rs-blockfolder-scout-badges .flipCardBack {
   color: black;
   transform: rotateY(180deg);
-  height: auto;
+  height: 100%;
 }
 .wp-block-rs-blockfolder-scout-badges .backCardHeader {
   text-align: center;

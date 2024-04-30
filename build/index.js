@@ -4135,7 +4135,7 @@ function save({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'center',
+    //justifyContent: 'center',
     marginLeft: '70px',
     marginRight: "70px"
   };
