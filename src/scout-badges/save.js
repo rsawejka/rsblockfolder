@@ -41,7 +41,7 @@ export default function save({ attributes }) {
 		display: 'flex',
 		flexDirection: 'row',
 		flexWrap: 'wrap',
-		justifyContent: 'space-between',
+		justifyContent: 'center',
 		marginLeft: '70px',
 		marginRight: "70px",
 	}
@@ -99,7 +99,7 @@ export default function save({ attributes }) {
 		<div className='scoutBadges' {...useBlockProps.save({ style: divStyles })}>
 
 			{isFillOne ? (
-				<div>
+				<div className='rs-scout-tile'>
 					<div className="tileTitle" style={titleBorder}>
 						<h4 className='title tileOneTitle'>
 							{attributes.tileOneTitle}
@@ -118,8 +118,8 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<h6 className='backCardHeader'>{attributes.tileOneTitle}</h6>
-								<div className='tileOneList'>
+								{/* <h6 className='backCardHeader'>{attributes.tileOneTitle}</h6> */}
+								<div className='tileOneList rs-scout-list'>
 									<RawHTML>
 									{attributes.tileOneList}
 									</RawHTML>
@@ -133,7 +133,7 @@ export default function save({ attributes }) {
 				<div></div>
 			)}
 			{isFillTwo ? (
-				<div>
+				<div className='rs-scout-tile'>
 					<div className="tileTitle" style={titleBorder}>
 						<h4 className='title tileTwoTitle'>
 							{attributes.tileTwoTitle}
@@ -152,8 +152,8 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<h6 className='backCardHeader'>{attributes.tileTwoTitle}</h6>
-								<div className='tileTwoList'>
+								{/* <h6 className='backCardHeader'>{attributes.tileTwoTitle}</h6> */}
+								<div className='tileTwoList rs-scout-list'>
 									<RawHTML>
 									{attributes.tileTwoList}
 									</RawHTML>
@@ -167,7 +167,7 @@ export default function save({ attributes }) {
 				<div></div>
 			)}
 			{isFillThree ? (
-				<div>
+				<div className='rs-scout-tile'>
 					<div className="tileTitle" style={titleBorder}>
 						<h4 className='title tileThreeTitle'>
 							{attributes.tileThreeTitle}
@@ -186,8 +186,8 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<h6 className='backCardHeader'>{attributes.tileThreeTitle}</h6>
-								<div className='tileThreeList'>
+								{/* <h6 className='backCardHeader'>{attributes.tileThreeTitle}</h6> */}
+								<div className='tileThreeList rs-scout-list'>
 									<RawHTML>
 									{attributes.tileThreeList}
 									</RawHTML>
@@ -201,7 +201,7 @@ export default function save({ attributes }) {
 				<div></div>
 			)}
 			{isFillFour ? (
-				<div>
+				<div className='rs-scout-tile'>
 					<div className="tileTitle" style={titleBorder}>
 						<h4 className='title tileFourTitle'>
 							{attributes.tileFourTitle}
@@ -220,8 +220,8 @@ export default function save({ attributes }) {
 								</div>
 							</div>
 							<div className="flipCardBack">
-								<h6 className='backCardHeader'>{attributes.tileFourTitle}</h6>
-								<div className='tileFourList'>
+								{/* <h6 className='backCardHeader'>{attributes.tileFourTitle}</h6> */}
+								<div className='tileFourList rs-scout-list'>
 									<RawHTML>
 									{attributes.tileFourList}
 									</RawHTML>

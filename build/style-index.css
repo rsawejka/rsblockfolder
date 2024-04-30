@@ -385,9 +385,13 @@
   text-wrap: wrap;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 .wp-block-rs-blockfolder-scout-badges .rs-block-description {
-  margin-top: 20px;
+  margin: 15px;
+}
+.wp-block-rs-blockfolder-scout-badges .rs-scout-list {
+  margin: 15px;
 }
 .wp-block-rs-blockfolder-scout-badges .flipCard {
   width: 300px;
@@ -410,15 +414,16 @@
   backface-visibility: hidden;
 }
 .wp-block-rs-blockfolder-scout-badges .flipCardBack {
-  background-color: #D3D3D3;
   color: black;
   transform: rotateY(180deg);
-  padding-left: 20px;
-  padding-right: 20px;
+  height: auto;
 }
 .wp-block-rs-blockfolder-scout-badges .backCardHeader {
   text-align: center;
   margin-top: 20px;
+}
+.wp-block-rs-blockfolder-scout-badges .rs-scout-tile {
+  margin: 30px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
